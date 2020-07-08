@@ -9,10 +9,15 @@ class Pages extends BaseController
         return view('pages/home');
     }
 
-    public function portfolio()
+    public function photo()
     {
-        return view('pages/portfolio');
+        return view('pages/photo');
     }
-    //--------------------------------------------------------------------
 
+    public function video()
+    {
+        return view('pages/video');
+    }
+
+    //--------------------------------------------------------------------
 }
