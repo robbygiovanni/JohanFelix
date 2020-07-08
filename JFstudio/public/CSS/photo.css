@@ -1,0 +1,104 @@
+.box {
+  width: 90vw;
+  /* background-color: gold; */
+  margin: auto;
+  position: relative;
+}
+
+.active {
+  color: black !important;
+  background-color: white !important;
+}
+
+.nav-title {
+  font-family: Roboto;
+  font-size: 46px;
+  color: #4f4f4f;
+  text-decoration-line: none;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.nav-title:hover {
+  font-family: Roboto;
+  font-size: 46px;
+  color: #4f4f4f;
+  text-decoration-line: none;
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.nav-link {
+  font-family: Catamaran;
+  font-size: 28px;
+  color: #969696;
+  text-decoration-line: none;
+  margin-top: 2.1em;
+}
+
+.dropdown-menu {
+  left: -8px;
+  display: block;
+  border: none;
+}
+
+.dropdown-item {
+  font-family: Catamaran;
+  font-size: 26px;
+  color: rgba(66, 59, 59, 0.575);
+  opacity: 0.5px;
+  text-decoration-line: none;
+  border: none;
+}
+
+.dropdown-item:hover {
+  font-family: Catamaran;
+  font-size: 26px;
+  color: black;
+  background-color: white;
+}
+
+/* animation nav line */
+li {
+  margin-bottom: 10px;
+}
+
+.cool-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.cool-link:hover {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.pageIndicator {
+  position: absolute;
+  font-family: Roboto;
+  font-size: 18px;
+  color: #969696;
+  font-weight: 300;
+  vertical-align: middle;
+  right: 0;
+  top: 77px;
+}
+
+.comingsoon {
+  font-size: 14px;
+}
