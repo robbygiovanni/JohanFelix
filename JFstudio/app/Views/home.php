@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johan Felix</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/home.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/animation.css">
+    <link rel="icon" href="<?= base_url(); ?>/Images/icon.svg">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/animation.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/home.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/loading.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section id="home">
-        <header class="heroThumb">
-            <img src="<?= base_url(); ?>/Images/hero.jpg" alt="" class="imageHero">
-            <div class="heroTitle">
-                <p class="heroName fadeTitleInDown">Johan Felix</p>
-                <p class="heroSubName">Videographer based in Indonesia.</p>
-                <p class="heroSubDiv slideInUp">See my work</p>
-                <a href="#myWork">
-                    <div class="arrowDown slideInUp">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.41 73.235">
-                            <g id="Group_204" data-name="Group 204" transform="translate(-940.495 -917.72)">
-                                <g id="Group_203" data-name="Group 203">
-                                    <path id="Path_1955" data-name="Path 1955" d="M976.2,971.35l-17.5,18.87-17.5-18.87,3.13-2.93,12.23,13.19V918.22h4.28v63.39l12.23-13.19Z" fill="#fff" stroke="#fff" stroke-width="1" />
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                </a>
-            </div>
-        </header>
-    </section>
+    <!-- <p style="position: fixed; left: 0; top: 0; color:red; font-size:30px;" class="scrollPos"></p> -->
+    <div id="loading">
+        <h1 class="loadingText">JOHAN FELIX</h1>
+    </div>
+    <header class="heroThumb">
+        <div class="imageHeroContainer fadeIn rellax" data-rellax-speed="-3">
+            <!-- <img src="../../../public/Images/hero.jpg" alt="" class="imageHero"> -->
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94670f99486865.5ef3b4f8f1232.jpg" alt="" class="imageHero">
 
+        </div>
+        <div class="heroTitle rellax" data-rellax-speed="5">
+            <p class="heroName fadeTitleInDown">Johan Felix</p>
+            <p class="heroSubName">Videographer based in Indonesia.</p>
+            <p class="heroSubDiv slideInUp">See my work</p>
+            <div class="arrowDown slideInUp">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.41 73.235">
+                    <g id="Group_204" data-name="Group 204" transform="translate(-940.495 -917.72)">
+                        <g id="Group_203" data-name="Group 203">
+                            <path id="Path_1955" data-name="Path 1955" d="M976.2,971.35l-17.5,18.87-17.5-18.87,3.13-2.93,12.23,13.19V918.22h4.28v63.39l12.23-13.19Z" fill="#fff" stroke="#fff" stroke-width="1" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </header>
     <section id="myWork">
         <div class="box">
             <nav class="nav">
-                <a class="nav-title" href="#home">Johan Felix</a>
+                <a class="nav-title" href="<?= base_url(); ?>/Home">Johan Felix</a>
                 <li class="nav-item dropdown">
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
@@ -72,40 +77,199 @@
                 </li>
             </nav>
             <p class="pageIndicator">photo/potrait</p>
+            <div id="displayArea" class="grid">
+                <div class="grid-col grid-col--1"></div>
+                <div class="grid-col grid-col--2"></div>
+                <div class="grid-col grid-col--3"></div>
+                <!-- items -->
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d41f4a99486865.5ef3be1375dfa.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/4b321599486865.5ef3be14f03d0.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/be5e8399486865.5ef3b4fa925e5.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9342b899486865.5ef3b4f8f0c5b.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e018e94062009.5edf911c6138b.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/65f89694062009.5ee7880e661c9.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fc8eef94062009.5ee7880f1a2b3.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5505e594062009.5ee7880e65795.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2eea6096969385.5ec59c41d1fc0.jpg" alt="picture">
+                </div>
+                <div class="grid-item">
+                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1a431699486865.5ef3b4fbaa747.jpg" alt="picture">
+                </div>
+            </div>
+            <div id="footer-socialMedia">
+                <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35.272" height="35.255" viewBox="0 0 75.272 75.255">
+                        <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram" d="M37.639,20.571A19.295,19.295,0,1,0,56.934,39.865,19.264,19.264,0,0,0,37.639,20.571Zm0,31.838A12.544,12.544,0,1,1,50.183,39.865,12.567,12.567,0,0,1,37.639,52.409ZM62.223,19.782a4.5,4.5,0,1,1-4.5-4.5A4.49,4.49,0,0,1,62.223,19.782ZM75,24.349c-.285-6.028-1.662-11.368-6.079-15.768-4.4-4.4-9.74-5.777-15.768-6.079-6.213-.353-24.836-.353-31.049,0-6.012.285-11.352,1.662-15.768,6.062S.561,18.3.259,24.332c-.353,6.213-.353,24.836,0,31.049C.545,61.41,1.922,66.75,6.338,71.15s9.74,5.777,15.768,6.079c6.213.353,24.836.353,31.049,0,6.028-.285,11.368-1.662,15.768-6.079,4.4-4.4,5.777-9.74,6.079-15.768.353-6.213.353-24.819,0-31.032Zm-8.027,37.7A12.7,12.7,0,0,1,59.822,69.2c-4.954,1.965-16.708,1.511-22.183,1.511S20.393,71.15,15.456,69.2A12.7,12.7,0,0,1,8.3,62.048C6.338,57.094,6.791,45.34,6.791,39.865S6.355,22.62,8.3,17.683a12.7,12.7,0,0,1,7.154-7.154C20.41,8.564,32.165,9.018,37.639,9.018s17.246-.437,22.183,1.511a12.7,12.7,0,0,1,7.154,7.154c1.965,4.954,1.511,16.708,1.511,22.183S68.94,57.111,66.976,62.048Z" transform="translate(0.005 -2.238)" fill="#969696" />
+                    </svg>
+                </div>
+                <div id="behance" class="iconSosmed" title="https://www.behance.net/johanfelix">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60.375" height="20.876" viewBox="0 0 105.375 65.876">
+                        <path id="Icon_simple-behance" data-name="Icon simple-behance" d="M30.474,6.754a39.168,39.168,0,0,1,8.433.826A18.969,18.969,0,0,1,45.43,10.26a12.347,12.347,0,0,1,4.217,4.919,17.553,17.553,0,0,1,1.493,7.6,14.294,14.294,0,0,1-2.227,8.17,16.09,16.09,0,0,1-6.6,5.359A15.479,15.479,0,0,1,51.2,42.324a18.027,18.027,0,0,1,2.921,10.366,18.158,18.158,0,0,1-1.8,8.477,16.254,16.254,0,0,1-5.1,5.93,22.355,22.355,0,0,1-7.335,3.369A32.132,32.132,0,0,1,31.5,71.581H0V6.785H30.474ZM74.406,60.174C76.339,62.054,79.119,63,82.725,63a11.471,11.471,0,0,0,6.72-1.963,8.086,8.086,0,0,0,3.426-4.129h11.367c-1.77,5.622-4.6,9.663-8.345,12.079a24.1,24.1,0,0,1-13.528,3.646,26.921,26.921,0,0,1-9.979-1.757,21.731,21.731,0,0,1-7.555-5.007A22.4,22.4,0,0,1,60.1,58.092a28.819,28.819,0,0,1-1.638-9.971,26.713,26.713,0,0,1,1.77-9.795A22.8,22.8,0,0,1,72.776,25.22a23.536,23.536,0,0,1,9.751-1.9,22.141,22.141,0,0,1,10.454,2.3,21.084,21.084,0,0,1,7.291,6.149,24.46,24.46,0,0,1,4.129,8.872,35.441,35.441,0,0,1,.922,10.454H71.547c0,3.69,1.23,7.168,3.119,9.07l-.351.132Zm-44.977.22a18.493,18.493,0,0,0,3.979-.408,10.185,10.185,0,0,0,3.351-1.318,6.509,6.509,0,0,0,2.284-2.561,9,9,0,0,0,.835-4.217c0-3.294-.966-5.666-2.811-7.116a12.1,12.1,0,0,0-7.423-2.108H14.231V60.455h15.2v-.132ZM89.195,35.577c-1.546-1.691-4.129-2.6-7.278-2.6A10.892,10.892,0,0,0,76.8,34.022a9.464,9.464,0,0,0-3.25,2.591,9.144,9.144,0,0,0-1.722,3.294,15.4,15.4,0,0,0-.593,3.119H92.147A12.547,12.547,0,0,0,89.16,35.6v.044Zm-60.557-2.7a10.229,10.229,0,0,0,6.259-1.81C36.54,29.88,37.33,27.9,37.33,25.189a8.276,8.276,0,0,0-.791-3.716,6.42,6.42,0,0,0-2.2-2.249A9.3,9.3,0,0,0,31.181,18.1a19.44,19.44,0,0,0-3.69-.325h-13.3V32.88H28.638ZM68.6,11.1H94.813v6.386H68.6v-6.4Z" transform="translate(0 -6.755)" fill="#969696" />
+                    </svg>
+                </div>
+                <div id="email" class="iconSosmed" title="johanfelix02@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45.724" height="21.628" viewBox="0 0 79.724 55.628">
+                        <path id="Icon_material-email" data-name="Icon material-email" d="M74.752,6H10.972C6.588,6,3.04,9.129,3.04,12.953L3,54.674c0,3.824,3.588,6.953,7.972,6.953H74.752c4.385,0,7.972-3.129,7.972-6.953V12.953C82.724,9.129,79.136,6,74.752,6Zm0,13.907L42.862,37.291,10.972,19.907V12.953l31.89,17.384,31.89-17.384Z" transform="translate(-3 -6)" fill="#969696" />
+                    </svg>
+                </div>
+            </div>
+            <div id="backTop" title="Back to Top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                    <g id="Group_201" data-name="Group 201" transform="translate(1682 254)">
+                        <rect id="Rectangle_363" data-name="Rectangle 363" width="200" height="200" transform="translate(-1682 -254)" />
+                        <path id="Icon_ionic-ios-arrow-round-up" data-name="Icon ionic-ios-arrow-round-up" d="M83.286,47.777a5,5,0,0,1-7.038.038L52.954,24.6v88.472a4.973,4.973,0,0,1-9.945,0V24.6L19.715,47.853a5.034,5.034,0,0,1-7.038-.038,4.952,4.952,0,0,1,.038-7L44.463,9.3h0a5.584,5.584,0,0,1,1.568-1.033,4.746,4.746,0,0,1,1.912-.382A4.986,4.986,0,0,1,51.424,9.3L83.172,40.815A4.873,4.873,0,0,1,83.286,47.777Z" transform="translate(-1630.247 -216.882)" fill="#f9f9f9" />
+                    </g>
+                </svg>
+            </div>
         </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.11.0/rellax.min.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script>
+        var ada = false;
         $(document).ready(function() {
-            $("body").css("animation-name", "fadeIn");
+
+            $("body").css("overflow", "hidden");
+            var onload = setTimeout(function() {
+                $("body").css("animation-name", "fadeIn");
+                $('#loading').hide();
+            }, 1000);
+        });
+
+
+        /////////Munculin Box kanan bawah//////////////
+        var scroll = setInterval(function() {
+            var scrollPos = $("#myWork").scrollTop();
+            // $(".scrollPos").text(scrollPos);
+            if (scrollPos > 400 && !ada) {
+                appearBut(true);
+                ada = true;
+            } else if (scrollPos <= 400 && ada) {
+                appearBut(false);
+                ada = false;
+            }
+        }, 1);
+
+        function appearBut(state) {
+            if (state) {
+                $("#backTop").animate({
+                    bottom: "+=120px"
+                }, 1000);
+            } else {
+                $("#backTop").animate({
+                    bottom: "-=120px"
+                }, 1000);
+            }
+        }
+        //////////////////////////////////////////////////
+        //////////////////Sosmed//////////////////////////
+        $("#insta").click(function() {
+            openInNewTab("https://instagram.com/johan.felix?igshid=foieomt0hd9h");
+        });
+        $("#behance").click(function() {
+            openInNewTab("https://www.behance.net/johanfelix");
+        });
+
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+        //////////////////////////////////////////////////
+        $("#backTop").click(function() {
+            $("#myWork").animate({
+                scrollTop: 0
+            }, 3000);
         });
 
         $(".arrowDown").mouseenter(function() {
             $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
             $(".arrowDown").css("transition-duration", "0.5s");
             $("#Path_1955").attr("fill", "transparent");
-        })
+        });
         $(".arrowDown").mouseleave(function() {
             $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
             $(".arrowDown").css("transition-duration", "0.5s");
             $("#Path_1955").attr("fill", "#fff");
-        })
+        });
 
         $(".heroSubDiv").mouseenter(function() {
             $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
             $(".arrowDown").css("transition-duration", "0.5s");
             $("#Path_1955").attr("fill", "transparent");
-        })
+        });
+
         $(".heroSubDiv").mouseleave(function() {
             $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
             $(".arrowDown").css("transition-duration", "0.5s");
             $("#Path_1955").attr("fill", "#fff");
-        })
+        });
 
-        // collapse
+        $(".arrowDown").click(function() {
+            $("#myWork").css("position", "absolute");
+            $("#myWork").css("left", "0");
+            $("#myWork").animate({
+                top: "0"
+            }, 2000, function() {
+                $(".heroThumb").css("display", "none");
+                $("#myWork").css("position", "relative");
+            });
+            $(".imageHeroContainer").css("position", "absolute");
+            $(".imageHeroContainer").animate({
+                top: "-=100vh"
+            }, 4000);
+            $(".heroTitle").css("position", "absolute");
+            $(".heroTitle").animate({
+                top: "-=100vh"
+            }, 2000);
+        });
+
+        $(".heroSubDiv").click(function() {
+            $("#myWork").css("position", "absolute");
+            $("#myWork").css("left", "0");
+            $("#myWork").animate({
+                top: "0"
+            }, 2000, function() {
+                $(".heroThumb").css("display", "none");
+                $("#myWork").css("position", "relative");
+            });
+            $(".imageHeroContainer").css("position", "absolute");
+            $(".imageHeroContainer").animate({
+                top: "-=100vh"
+            }, 4000);
+            $(".heroTitle").css("position", "absolute");
+            $(".heroTitle").animate({
+                top: "-=100vh"
+            }, 2000);
+        });
+
+
+        //////////Dropdown Collapse//////////
         $(".photo").click(function() {
             if ($("#ee").css("display") == "block") {
                 $(".video").trigger("click");
@@ -128,7 +292,15 @@
                 }
             }
         });
+        /////////////////////////////////////
+        ///////////Masonry Layout////////////
+        var colc = new Colcade('.grid', {
+            columns: '.grid-col',
+            items: '.grid-item'
+        });
+        /////////////////////////////////////
     </script>
 </body>
+
 
 </html>
