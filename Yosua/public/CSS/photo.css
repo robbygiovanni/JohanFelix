@@ -11,7 +11,7 @@
 }
 
 .nav-title {
-  font-family: Roboto;
+  font-family: "Cardo", serif !important;
   font-size: 46px;
   color: black;
   text-decoration-line: none;
@@ -20,8 +20,6 @@
 }
 
 .nav-title:hover {
-  font-family: Roboto;
-  font-size: 46px;
   color: #4f4f4f;
   text-decoration-line: none;
   margin-right: 1em;

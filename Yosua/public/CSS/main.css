@@ -5,6 +5,10 @@
   scroll-snap-type: y mandatory;
 }
 
+p {
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,12 +24,13 @@ html {
   background-color: white;
   overflow: auto;
   overflow-x: hidden;
+  box-shadow: 0 0px 5.3px rgba(0, 0, 0, 0.028),
+    0 0px 17.9px rgba(0, 0, 0, 0.042), 0 0px 80px rgba(0, 0, 0, 0.07);
 }
 
 body {
   animation-duration: 2s;
   background-color: #141414 !important;
-  overflow-x: hidden;
 }
 
 .heroThumb,
@@ -93,6 +98,7 @@ body {
   animation-duration: 2s;
   text-decoration-line: none;
   border: none;
+  margin-bottom: 0.5em;
 }
 
 .heroSubDiv:hover {
@@ -202,4 +208,129 @@ body {
 
 #email:hover #Icon_material-email {
   fill: #3d3d3d;
+}
+
+.previewContainer {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  animation-duration: 1s;
+  background-color: white;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+
+.previewArea {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+}
+
+.headerPreview {
+  width: 100%;
+  height: 10%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewTitle {
+  font-family: "Cardo", serif;
+  font-size: 2.5em;
+}
+
+.previewTitle:hover {
+  cursor: pointer;
+}
+
+.mainPreview {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerPreview {
+  width: 100%;
+  height: 5%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prevArea {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2em;
+}
+
+.nextArea {
+  height: 100%;
+  width: 15%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-left: 2em;
+}
+
+.previewImgContainer {
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.previewImg {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  animation-duration: 0.5s;
+}
+
+.arrowIcon {
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.2em;
+  transition: transform 0.3s;
+}
+
+.closePreview {
+  position: absolute;
+  right: 3em;
+  top: 3em;
+  transition: transform 0.3s;
+}
+
+.closePreview:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.prevArea:hover .arrowIcon {
+  transform: translateX(-0.3em);
+}
+
+.prevArea:hover {
+  cursor: pointer;
+}
+
+.nextArea:hover .arrowIcon {
+  transform: translateX(0.3em);
+}
+
+.nextArea:hover {
+  cursor: pointer;
 }

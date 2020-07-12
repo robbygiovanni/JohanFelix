@@ -12,8 +12,9 @@
 }
 
 .loadingText {
-  font-family: Roboto;
-  font-size: large;
+  font-family: "Yeseva One", cursive;
+  letter-spacing: 0.3em;
+  font-size: 2em;
   font-weight: bolder;
   color: white;
 }
