@@ -54,9 +54,9 @@
                 <li class=" nav-item dropdown">
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
-                        <a class="dropdown-item active" href="#">portrait</a>
-                        <a class="dropdown-item" href="#">landscape</a>
-                        <a class="dropdown-item" href="#">product</a>
+                        <a id="btnPortrait" class="dropdown-item active" href="">portrait</a>
+                        <a id="btnLandscape" class="dropdown-item" href="">landscape</a>
+                        <a id="btnProduct" class="dropdown-item" href="">product</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -86,10 +86,12 @@
                 <div class="grid-col grid-col--3"></div>
                 <div class="grid-col grid-col--4"></div>
                 <!-- items -->
-                <div class="grid-item">
-                    <img id="gambar1" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
+                <?php foreach ($photo as $photos) : ?>
+                    <div class="grid-item">
+                        <img id="gambar1" class="img-item" src="<?= $photos['link_photo'] ?>" alt="picture">
+                    </div>
+                <?php endforeach; ?>
+                <!-- <div class="grid-item">
                     <img id="gambar2" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
@@ -121,7 +123,7 @@
                 </div>
                 <div class="grid-item">
                     <img id="gambar12" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1a431699486865.5ef3b4fbaa747.jpg" alt="picture">
-                </div>
+                </div> -->
             </div>
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
@@ -369,6 +371,19 @@
             document.location.href = "<?= base_url(); ?>/Home";
         });
         /////////////////////////////////////
+        // $("#btnLandscape").click(function() {
+        //     $.ajax({
+        //         url: "<?= base_url(); ?>/Home/refreshPhoto/landscape",
+        //         method: "post",
+        //         data: [
+
+        //         ],
+        //         success: function(result) {
+        //             $("#displayArea").html(result);
+        //             $(".pageIndicator").html("photo / landscape");
+        //         }
+        //     });
+        // });
     </script>
 </body>
 

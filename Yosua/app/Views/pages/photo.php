@@ -55,7 +55,7 @@
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
                         <a class="dropdown-item active" href="#">potrait</a>
-                        <a class="dropdown-item" href="#">landscape</a>
+                        <a class="dropdown-item">landscape</a>
                         <a class="dropdown-item" href="#">product</a>
                     </div>
                 </li>
