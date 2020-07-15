@@ -5,23 +5,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johan Felix</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="icon" href="<?= base_url(); ?>/Images/icon.svg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/animation.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/home.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/loading.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- <p style="position: fixed; left: 0; top: 0; color:red; font-size:30px;" class="scrollPos"></p> -->
     <div id="loading">
-        <h1 class="loadingText">JOHAN FELIX</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="31.5" viewBox="0 0 36 31.5">
+            <path id="Icon_awesome-camera-retro" data-name="Icon awesome-camera-retro" d="M3.375,2.25A3.376,3.376,0,0,0,0,5.625v24.75A3.376,3.376,0,0,0,3.375,33.75h29.25A3.376,3.376,0,0,0,36,30.375V5.625A3.376,3.376,0,0,0,32.625,2.25Zm0,2.25h7.453a.423.423,0,0,1,.422.422V6.328a.423.423,0,0,1-.422.422H2.672a.423.423,0,0,1-.422-.422v-.7A1.128,1.128,0,0,1,3.375,4.5Zm29.953,6.75H2.672a.423.423,0,0,1-.422-.422V8.3a.423.423,0,0,1,.422-.422h9.7L14.5,4.69a.419.419,0,0,1,.352-.19H32.625A1.128,1.128,0,0,1,33.75,5.625v5.2A.423.423,0,0,1,33.328,11.25ZM18,29.813a8.438,8.438,0,1,1,8.438-8.437A8.444,8.444,0,0,1,18,29.813Zm0-14.625a6.188,6.188,0,1,0,6.188,6.188A6.2,6.2,0,0,0,18,15.188ZM14.625,22.5A1.128,1.128,0,0,1,13.5,21.375a4.5,4.5,0,0,1,4.5-4.5,1.125,1.125,0,0,1,0,2.25,2.257,2.257,0,0,0-2.25,2.25A1.128,1.128,0,0,1,14.625,22.5Z" transform="translate(0 -2.25)" fill="#fff" />
+        </svg>
     </div>
     <header class="heroThumb">
         <div class="imageHeroContainer fadeIn rellax" data-rellax-speed="-3">
@@ -48,10 +51,10 @@
         <div class="box">
             <nav class="nav">
                 <a class="nav-title" href="<?= base_url(); ?>/Home">Johan Felix</a>
-                <li class="nav-item dropdown">
+                <li class=" nav-item dropdown">
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
-                        <a class="dropdown-item active" href="#">potrait</a>
+                        <a class="dropdown-item active" href="#">portrait</a>
                         <a class="dropdown-item" href="#">landscape</a>
                         <a class="dropdown-item" href="#">product</a>
                     </div>
@@ -76,47 +79,48 @@
                     <a class="nav-link cool-link" href="#">contact</a>
                 </li>
             </nav>
-            <p class="pageIndicator">photo/potrait</p>
+            <p class="pageIndicator">photo / portrait</p>
             <div id="displayArea" class="grid">
                 <div class="grid-col grid-col--1"></div>
                 <div class="grid-col grid-col--2"></div>
                 <div class="grid-col grid-col--3"></div>
+                <div class="grid-col grid-col--4"></div>
                 <!-- items -->
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" alt="picture">
+                    <img id="gambar1" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
+                    <img id="gambar2" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d41f4a99486865.5ef3be1375dfa.jpg" alt="picture">
+                    <img id="gambar3" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d41f4a99486865.5ef3be1375dfa.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/4b321599486865.5ef3be14f03d0.jpg" alt="picture">
+                    <img id="gambar4" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/4b321599486865.5ef3be14f03d0.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/be5e8399486865.5ef3b4fa925e5.jpg" alt="picture">
+                    <img id="gambar5" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/be5e8399486865.5ef3b4fa925e5.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9342b899486865.5ef3b4f8f0c5b.jpg" alt="picture">
+                    <img id="gambar6" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9342b899486865.5ef3b4f8f0c5b.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e018e94062009.5edf911c6138b.jpg" alt="picture">
+                    <img id="gambar7" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e018e94062009.5edf911c6138b.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/65f89694062009.5ee7880e661c9.jpg" alt="picture">
+                    <img id="gambar8" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/65f89694062009.5ee7880e661c9.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fc8eef94062009.5ee7880f1a2b3.jpg" alt="picture">
+                    <img id="gambar9" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fc8eef94062009.5ee7880f1a2b3.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5505e594062009.5ee7880e65795.jpg" alt="picture">
+                    <img id="gambar10" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5505e594062009.5ee7880e65795.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2eea6096969385.5ec59c41d1fc0.jpg" alt="picture">
+                    <img id="gambar11" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2eea6096969385.5ec59c41d1fc0.jpg" alt="picture">
                 </div>
                 <div class="grid-item">
-                    <img class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1a431699486865.5ef3b4fbaa747.jpg" alt="picture">
+                    <img id="gambar12" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1a431699486865.5ef3b4fbaa747.jpg" alt="picture">
                 </div>
             </div>
             <div id="footer-socialMedia">
@@ -144,6 +148,41 @@
                     </g>
                 </svg>
             </div>
+            <div class="previewContainer">
+                <div class="previewArea">
+                    <div class="headerPreview">
+                        <h3 class="previewTitle">Johan Felix</h3>
+                    </div>
+                    <div class="mainPreview">
+                        <div class="prevArea">
+                            <div class="arrowIcon" id="prev" style="margin-right: 0.5em">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
+                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.216,11.51a.919.919,0,0,1,.007,1.294l-4.268,4.282H27.218a.914.914,0,0,1,0,1.828H10.955L15.23,23.2a.925.925,0,0,1-.007,1.294.91.91,0,0,1-1.287-.007L8.142,18.647h0a1.026,1.026,0,0,1-.19-.288.872.872,0,0,1-.07-.352.916.916,0,0,1,.26-.64l5.794-5.836A.9.9,0,0,1,15.216,11.51Z" transform="translate(-7.882 -11.252)" />
+                                </svg>
+                            </div>
+                            <p class="prevText">prev</p>
+                        </div>
+                        <div class="previewImgContainer">
+                        </div>
+                        <div class="nextArea">
+                            <p class="nextText">next</p>
+                            <div class="arrowIcon" id="next" style="margin-left: 0.5em">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
+                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M20.792,11.51a.919.919,0,0,0-.007,1.294l4.268,4.282H8.789a.914.914,0,0,0,0,1.828H25.053L20.777,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.027,1.027,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.792,11.51Z" transform="translate(-7.882 -11.252)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerPreview">
+                        <p class="footerPreviewText">photo / portrait</p>
+                    </div>
+                </div>
+                <div class="closePreview">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.422" viewBox="0 0 13.426 13.422">
+                        <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z" transform="translate(-11.285 -11.289)" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
@@ -153,16 +192,13 @@
     <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script>
         var ada = false;
+        var imgCtr = 1;
+        $("body").css("overflow", "hidden");
         $(document).ready(function() {
-
-            $("body").css("overflow", "hidden");
-            var onload = setTimeout(function() {
-                $("body").css("animation-name", "fadeIn");
-                $('#loading').hide();
-            }, 1000);
+            $("body").css("animation-name", "fadeIn");
+            $('#loading').hide();
+            $(".previewContainer").css("display", "none");
         });
-
-
         /////////Munculin Box kanan bawah//////////////
         var scroll = setInterval(function() {
             var scrollPos = $("#myWork").scrollTop();
@@ -249,26 +285,6 @@
             }, 2000);
         });
 
-        $(".heroSubDiv").click(function() {
-            $("#myWork").css("position", "absolute");
-            $("#myWork").css("left", "0");
-            $("#myWork").animate({
-                top: "0"
-            }, 2000, function() {
-                $(".heroThumb").css("display", "none");
-                $("#myWork").css("position", "relative");
-            });
-            $(".imageHeroContainer").css("position", "absolute");
-            $(".imageHeroContainer").animate({
-                top: "-=100vh"
-            }, 4000);
-            $(".heroTitle").css("position", "absolute");
-            $(".heroTitle").animate({
-                top: "-=100vh"
-            }, 2000);
-        });
-
-
         //////////Dropdown Collapse//////////
         $(".photo").click(function() {
             if ($("#ee").css("display") == "block") {
@@ -297,6 +313,60 @@
         var colc = new Colcade('.grid', {
             columns: '.grid-col',
             items: '.grid-item'
+        });
+        /////////////////////////////////////
+        ////////////Image Preview////////////
+        var preview = false;
+        $(".img-item").click(function() {
+            if (!preview) {
+                $(".previewContainer").css("display", "block");
+                $(".previewContainer").addClass("fadeIn");
+                ctr = $(this).attr("id").replace('gambar', '');
+                console.log(ctr);
+                imgCtr = parseInt(ctr);
+                var img = $("#gambar" + imgCtr).attr("src");
+                $(".previewImgContainer").append('<img class="previewImg" src="' + img + '" alt="picture">');
+                var fadePreview = setTimeout('$(".previewContainer").removeClass("fadeIn");', 1000);
+                preview = true;
+            }
+        });
+        $(".prevArea").click(function() {
+            previewImg("prev");
+        });
+
+        $(".nextArea").click(function() {
+            previewImg("next");
+        });
+
+        $(".closePreview").click(function() {
+            $(".previewContainer").addClass("fadeOut");
+            var fadePreview = setTimeout(function() {
+                $(".previewContainer").css("display", "none");
+                $(".previewImgContainer").empty();
+                $(".previewContainer").removeClass("fadeOut");
+            }, 1000);
+            preview = false;
+        });
+
+        function previewImg(direction) {
+            if (direction == "prev") {
+                imgCtr--;
+                if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
+            } else {
+                imgCtr++;
+                if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
+            }
+            var img = $("#gambar" + imgCtr).attr("src");
+            $(".previewImg").addClass("fadeOut");
+            var fade = setTimeout(() => {
+                $(".previewImg").attr("style", "display:none");
+                $(".previewImgContainer").children(".previewImg").remove();
+                $(".previewImgContainer").append('<img class="previewImg fadeIn" src="' + img + '" alt="picture">');
+            }, 500);
+        }
+
+        $(".previewTitle").click(function() {
+            document.location.href = "<?= base_url(); ?>/Home";
         });
         /////////////////////////////////////
     </script>
