@@ -22,14 +22,22 @@ class Photo extends BaseController
         return view('photo/portrait', $data);
     }
 
-    public function Landscape()
+    public function Travel()
     {
         $data = [
-            'photo' => $this->photoModel->getPhoto('landscape')
+            'photo' => $this->photoModel->getPhoto('travel')
         ];
 
-        return view('photo/landscape', $data);
+        return view('photo/travel', $data);
     }
 
+    public function Product()
+    {
+        $data = [
+            'photo' => $this->photoModel->getPhoto('product')
+        ];
+
+        return view('photo/product', $data);
+    }
     //--------------------------------------------------------------------
 }

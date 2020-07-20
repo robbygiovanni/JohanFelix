@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johan Felix</title>
+    <title>Johan Felix - Travel</title>
     <link rel="icon" href="<?= base_url(); ?>/Images/icon.svg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
@@ -20,33 +20,11 @@
 </head>
 
 <body>
-    <!-- <p style="position: fixed; left: 0; top: 0; color:red; font-size:30px;" class="scrollPos"></p> -->
     <div id="loading">
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="31.5" viewBox="0 0 36 31.5">
             <path id="Icon_awesome-camera-retro" data-name="Icon awesome-camera-retro" d="M3.375,2.25A3.376,3.376,0,0,0,0,5.625v24.75A3.376,3.376,0,0,0,3.375,33.75h29.25A3.376,3.376,0,0,0,36,30.375V5.625A3.376,3.376,0,0,0,32.625,2.25Zm0,2.25h7.453a.423.423,0,0,1,.422.422V6.328a.423.423,0,0,1-.422.422H2.672a.423.423,0,0,1-.422-.422v-.7A1.128,1.128,0,0,1,3.375,4.5Zm29.953,6.75H2.672a.423.423,0,0,1-.422-.422V8.3a.423.423,0,0,1,.422-.422h9.7L14.5,4.69a.419.419,0,0,1,.352-.19H32.625A1.128,1.128,0,0,1,33.75,5.625v5.2A.423.423,0,0,1,33.328,11.25ZM18,29.813a8.438,8.438,0,1,1,8.438-8.437A8.444,8.444,0,0,1,18,29.813Zm0-14.625a6.188,6.188,0,1,0,6.188,6.188A6.2,6.2,0,0,0,18,15.188ZM14.625,22.5A1.128,1.128,0,0,1,13.5,21.375a4.5,4.5,0,0,1,4.5-4.5,1.125,1.125,0,0,1,0,2.25,2.257,2.257,0,0,0-2.25,2.25A1.128,1.128,0,0,1,14.625,22.5Z" transform="translate(0 -2.25)" fill="#fff" />
         </svg>
     </div>
-    <header class="heroThumb">
-        <div class="imageHeroContainer fadeIn rellax" data-rellax-speed="-3">
-            <!-- <img src="../../../public/Images/hero.jpg" alt="" class="imageHero"> -->
-            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94670f99486865.5ef3b4f8f1232.jpg" alt="" class="imageHero">
-
-        </div>
-        <div class="heroTitle rellax" data-rellax-speed="5">
-            <p class="heroName fadeTitleInDown">Johan Felix</p>
-            <p class="heroSubName">Videographer based in Indonesia.</p>
-            <p class="heroSubDiv slideInUp">See my work</p>
-            <div class="arrowDown slideInUp">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.41 73.235">
-                    <g id="Group_204" data-name="Group 204" transform="translate(-940.495 -917.72)">
-                        <g id="Group_203" data-name="Group 203">
-                            <path id="Path_1955" data-name="Path 1955" d="M976.2,971.35l-17.5,18.87-17.5-18.87,3.13-2.93,12.23,13.19V918.22h4.28v63.39l12.23-13.19Z" fill="#fff" stroke="#fff" stroke-width="1" />
-                        </g>
-                    </g>
-                </svg>
-            </div>
-        </div>
-    </header>
     <section id="myWork">
         <div class="box">
             <nav class="nav">
@@ -54,12 +32,12 @@
                 <li class=" nav-item dropdown">
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
-                        <a id="btnPortrait" class="dropdown-item active" href="<?= base_url(); ?>/Photo">portrait</a>
-                        <a id="btnLandscape" class="dropdown-item" href="<?= base_url(); ?>/Photo/Travel">travel</a>
+                        <a id="btnPortrait" class="dropdown-item" href="<?= base_url(); ?>/Photo">portrait</a>
+                        <a id="btnLandscape" class="dropdown-item active" href="<?= base_url(); ?>/Photo/Travel">travel</a>
                         <a id="btnProduct" class="dropdown-item" href="<?= base_url(); ?>/Photo/Product">product</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class=" nav-item dropdown">
                     <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
                         <a class="dropdown-item" href="#">music video</a>
@@ -76,10 +54,10 @@
                     <a class="nav-link cool-link" href="#">achievement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Contact">contact</a>
+                    <a class="nav-link cool-link" href="#">contact</a>
                 </li>
             </nav>
-            <p class="pageIndicator">photo / portrait</p>
+            <p class="pageIndicator">photo / travel</p>
             <div id="displayArea" class="grid">
                 <div class="grid-col grid-col--1"></div>
                 <div class="grid-col grid-col--2"></div>
@@ -180,7 +158,7 @@
                         </div>
                     </div>
                     <div class="footerPreview">
-                        <p class="footerPreviewText">photo / portrait</p>
+                        <p class="footerPreviewText">photo / travel</p>
                     </div>
                 </div>
                 <div class="closePreview">
@@ -204,7 +182,6 @@
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
             $(".previewContainer").css("display", "none");
-
         });
         /////////Munculin Box kanan bawah//////////////
         var scroll = setInterval(function() {
@@ -250,50 +227,7 @@
             }, 3000);
         });
 
-        $(".arrowDown").mouseenter(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "transparent");
-        });
-        $(".arrowDown").mouseleave(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "#fff");
-        });
 
-        $(".heroSubDiv").mouseenter(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "transparent");
-        });
-
-        $(".heroSubDiv").mouseleave(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "#fff");
-        });
-
-        $(".arrowDown").click(function() {
-            $("#myWork").css("position", "absolute");
-            $("#myWork").css("left", "0");
-            $("#myWork").animate({
-                top: "0"
-            }, 2000, function() {
-                $(".heroThumb").css("display", "none");
-                $("#myWork").css("position", "relative");
-            });
-            $(".imageHeroContainer").css("position", "absolute");
-            $(".imageHeroContainer").animate({
-                top: "-=100vh"
-            }, 4000);
-            $(".heroTitle").css("position", "absolute");
-            $(".heroTitle").animate({
-                top: "-=100vh"
-            }, 2000);
-
-            $("title").text("Johan Felix | Portrait");
-
-        });
 
         //////////Dropdown Collapse//////////
         $(".photo").click(function() {
@@ -395,6 +329,5 @@
         // });
     </script>
 </body>
-
 
 </html>

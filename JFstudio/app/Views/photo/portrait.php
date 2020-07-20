@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johan Felix</title>
+    <title>Johan Felix - Portrait</title>
     <link rel="icon" href="<?= base_url(); ?>/Images/icon.svg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
@@ -33,8 +33,8 @@
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
                         <a id="btnPortrait" class="dropdown-item active" href="<?= base_url(); ?>/Photo">portrait</a>
-                        <a id="btnLandscape" class="dropdown-item " href="<?= base_url(); ?>/Photo/Landscape">landscape</a>
-                        <a id="btnProduct" class="dropdown-item" href="">product</a>
+                        <a id="btnLandscape" class="dropdown-item " href="<?= base_url(); ?>/Photo/Travel">travel</a>
+                        <a id="btnProduct" class="dropdown-item" href="<?= base_url(); ?>/Photo/Product">product</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -64,11 +64,15 @@
                 <div class="grid-col grid-col--3"></div>
                 <div class="grid-col grid-col--4"></div>
                 <!-- items -->
-                <?php foreach ($photo as $photos) : ?>
+                <?php
+                $ctr = 1;
+                foreach ($photo as $photos) : ?>
                     <div class="grid-item">
-                        <img id="gambar1" class="img-item" src="<?= $photos['link_photo'] ?>" alt="picture">
+                        <img id="gambar<?= $ctr ?>" class="img-item" src="<?= $photos['link_photo'] ?>" alt="picture">
                     </div>
-                <?php endforeach; ?>
+                <?php
+                    $ctr++;
+                endforeach; ?>
                 <!-- <div class="grid-item">
                     <img id="gambar2" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
                 </div>
@@ -248,6 +252,7 @@
                 }
             }
         });
+        /////////////////////////////////////
         /////////////////////////////////////
         ///////////Masonry Layout////////////
         var colc = new Colcade('.grid', {

@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johan Felix</title>
+    <title>Johan Felix - Contact</title>
     <link rel="icon" href="<?= base_url(); ?>/Images/icon.svg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/animation.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/home.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/loading.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/contact.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
@@ -30,14 +31,14 @@
             <nav class="nav">
                 <a class="nav-title" href="<?= base_url(); ?>/Home">Johan Felix</a>
                 <li class=" nav-item dropdown">
-                    <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
+                    <a class="nav-link cool-link photo" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
                         <a id="btnPortrait" class="dropdown-item" href="<?= base_url(); ?>/Photo">portrait</a>
-                        <a id="btnLandscape" class="dropdown-item active" href="<?= base_url(); ?>/Photo/Landscape">landscape</a>
-                        <a id="btnProduct" class="dropdown-item" href="">product</a>
+                        <a id="btnLandscape" class="dropdown-item" href="<?= base_url(); ?>/Photo/Travel">travel</a>
+                        <a id="btnProduct" class="dropdown-item" href="<?= base_url(); ?>/Photo/Product">product</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class=" nav-item dropdown">
                     <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
                         <a class="dropdown-item" href="#">music video</a>
@@ -54,54 +55,31 @@
                     <a class="nav-link cool-link" href="#">achievement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">contact</a>
+                    <a class="nav-link cool-link active" href="#">contact</a>
                 </li>
             </nav>
-            <p class="pageIndicator">photo / landscape</p>
-            <div id="displayArea" class="grid">
-                <div class="grid-col grid-col--1"></div>
-                <div class="grid-col grid-col--2"></div>
-                <div class="grid-col grid-col--3"></div>
-                <div class="grid-col grid-col--4"></div>
-                <!-- items -->
-                <?php foreach ($photo as $photos) : ?>
-                    <div class="grid-item">
-                        <img id="gambar1" class="img-item" src="<?= $photos['link_photo'] ?>" alt="picture">
+
+            <div class="box2">
+                <h4 class="contactMe">Contact Me</h4>
+                <form method="post">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Name *</label>
+                        <input type="text" class="form-control">
                     </div>
-                <?php endforeach; ?>
-                <!-- <div class="grid-item">
-                    <img id="gambar2" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar3" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d41f4a99486865.5ef3be1375dfa.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar4" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/4b321599486865.5ef3be14f03d0.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar5" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/be5e8399486865.5ef3b4fa925e5.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar6" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9342b899486865.5ef3b4f8f0c5b.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar7" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e018e94062009.5edf911c6138b.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar8" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/65f89694062009.5ee7880e661c9.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar9" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fc8eef94062009.5ee7880f1a2b3.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar10" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5505e594062009.5ee7880e65795.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar11" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2eea6096969385.5ec59c41d1fc0.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar12" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1a431699486865.5ef3b4fbaa747.jpg" alt="picture">
-                </div> -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email *</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputSubject1">Subject *</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message *</label>
+                        <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="">Submit</button>
+                </form>
             </div>
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
@@ -120,50 +98,8 @@
                     </svg>
                 </div>
             </div>
-            <div id="backTop" title="Back to Top">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                    <g id="Group_201" data-name="Group 201" transform="translate(1682 254)">
-                        <rect id="Rectangle_363" data-name="Rectangle 363" width="200" height="200" transform="translate(-1682 -254)" />
-                        <path id="Icon_ionic-ios-arrow-round-up" data-name="Icon ionic-ios-arrow-round-up" d="M83.286,47.777a5,5,0,0,1-7.038.038L52.954,24.6v88.472a4.973,4.973,0,0,1-9.945,0V24.6L19.715,47.853a5.034,5.034,0,0,1-7.038-.038,4.952,4.952,0,0,1,.038-7L44.463,9.3h0a5.584,5.584,0,0,1,1.568-1.033,4.746,4.746,0,0,1,1.912-.382A4.986,4.986,0,0,1,51.424,9.3L83.172,40.815A4.873,4.873,0,0,1,83.286,47.777Z" transform="translate(-1630.247 -216.882)" fill="#f9f9f9" />
-                    </g>
-                </svg>
-            </div>
-            <div class="previewContainer">
-                <div class="previewArea">
-                    <div class="headerPreview">
-                        <h3 class="previewTitle">Johan Felix</h3>
-                    </div>
-                    <div class="mainPreview">
-                        <div class="prevArea">
-                            <div class="arrowIcon" id="prev" style="margin-right: 0.5em">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
-                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.216,11.51a.919.919,0,0,1,.007,1.294l-4.268,4.282H27.218a.914.914,0,0,1,0,1.828H10.955L15.23,23.2a.925.925,0,0,1-.007,1.294.91.91,0,0,1-1.287-.007L8.142,18.647h0a1.026,1.026,0,0,1-.19-.288.872.872,0,0,1-.07-.352.916.916,0,0,1,.26-.64l5.794-5.836A.9.9,0,0,1,15.216,11.51Z" transform="translate(-7.882 -11.252)" />
-                                </svg>
-                            </div>
-                            <p class="prevText">prev</p>
-                        </div>
-                        <div class="previewImgContainer">
-                        </div>
-                        <div class="nextArea">
-                            <p class="nextText">next</p>
-                            <div class="arrowIcon" id="next" style="margin-left: 0.5em">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
-                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M20.792,11.51a.919.919,0,0,0-.007,1.294l4.268,4.282H8.789a.914.914,0,0,0,0,1.828H25.053L20.777,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.027,1.027,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.792,11.51Z" transform="translate(-7.882 -11.252)" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footerPreview">
-                        <p class="footerPreviewText">photo / landscape</p>
-                    </div>
-                </div>
-                <div class="closePreview">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.422" viewBox="0 0 13.426 13.422">
-                        <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z" transform="translate(-11.285 -11.289)" />
-                    </svg>
-                </div>
-            </div>
         </div>
+
     </section>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>>
@@ -216,14 +152,6 @@
             var win = window.open(url, '_blank');
             win.focus();
         }
-        //////////////////////////////////////////////////
-        $("#backTop").click(function() {
-            $("#myWork").animate({
-                scrollTop: 0
-            }, 3000);
-        });
-
-
 
         //////////Dropdown Collapse//////////
         $(".photo").click(function() {
@@ -248,81 +176,6 @@
                 }
             }
         });
-        /////////////////////////////////////
-        ///////////Masonry Layout////////////
-        var colc = new Colcade('.grid', {
-            columns: '.grid-col',
-            items: '.grid-item'
-        });
-        /////////////////////////////////////
-        ////////////Image Preview////////////
-        var preview = false;
-        $(".img-item").click(function() {
-            if (!preview) {
-                $(".previewContainer").css("display", "block");
-                $(".previewContainer").addClass("fadeIn");
-                ctr = $(this).attr("id").replace('gambar', '');
-                console.log(ctr);
-                imgCtr = parseInt(ctr);
-                var img = $("#gambar" + imgCtr).attr("src");
-                $(".previewImgContainer").append('<img class="previewImg" src="' + img + '" alt="picture">');
-                var fadePreview = setTimeout('$(".previewContainer").removeClass("fadeIn");', 1000);
-                preview = true;
-            }
-        });
-        $(".prevArea").click(function() {
-            previewImg("prev");
-        });
-
-        $(".nextArea").click(function() {
-            previewImg("next");
-        });
-
-        $(".closePreview").click(function() {
-            $(".previewContainer").addClass("fadeOut");
-            var fadePreview = setTimeout(function() {
-                $(".previewContainer").css("display", "none");
-                $(".previewImgContainer").empty();
-                $(".previewContainer").removeClass("fadeOut");
-            }, 1000);
-            preview = false;
-        });
-
-        function previewImg(direction) {
-            if (direction == "prev") {
-                imgCtr--;
-                if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
-            } else {
-                imgCtr++;
-                if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
-            }
-            var img = $("#gambar" + imgCtr).attr("src");
-            $(".previewImg").addClass("fadeOut");
-            var fade = setTimeout(() => {
-                $(".previewImg").attr("style", "display:none");
-                $(".previewImgContainer").children(".previewImg").remove();
-                $(".previewImgContainer").append('<img class="previewImg fadeIn" src="' + img + '" alt="picture">');
-            }, 500);
-        }
-
-        $(".previewTitle").click(function() {
-            document.location.href = "<?= base_url(); ?>/Home";
-        });
-
-        /////////////////////////////////////
-        // $("#btnLandscape").click(function() {
-        //     $.ajax({
-        //         url: "<?= base_url(); ?>/Home/refreshPhoto/landscape",
-        //         method: "post",
-        //         data: [
-
-        //         ],
-        //         success: function(result) {
-        //             $("#displayArea").html(result);
-        //             $(".pageIndicator").html("photo / landscape");
-        //         }
-        //     });
-        // });
     </script>
 </body>
 
