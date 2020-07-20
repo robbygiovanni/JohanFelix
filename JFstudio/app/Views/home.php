@@ -54,8 +54,8 @@
                 <li class=" nav-item dropdown">
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
-                        <a id="btnPortrait" class="dropdown-item active" href="">portrait</a>
-                        <a id="btnLandscape" class="dropdown-item" href="">landscape</a>
+                        <a id="btnPortrait" class="dropdown-item active" href="<?= base_url(); ?>/Photo">portrait</a>
+                        <a id="btnLandscape" class="dropdown-item" href="<?= base_url(); ?>/Photo/Landscape">landscape</a>
                         <a id="btnProduct" class="dropdown-item" href="">product</a>
                     </div>
                 </li>
@@ -370,6 +370,7 @@
         $(".previewTitle").click(function() {
             document.location.href = "<?= base_url(); ?>/Home";
         });
+
         /////////////////////////////////////
         // $("#btnLandscape").click(function() {
         //     $.ajax({

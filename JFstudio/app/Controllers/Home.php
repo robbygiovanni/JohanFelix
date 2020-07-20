@@ -22,14 +22,5 @@ class Home extends BaseController
         return view('home', $data);
     }
 
-    public function refreshPhoto($kategori)
-    {
-        $data = [
-            'photo' => $this->photoModel->getPhoto('landscape')
-        ];
-
-        return view('ajxRefreshPhoto', $data);
-    }
-
     //--------------------------------------------------------------------
 }
