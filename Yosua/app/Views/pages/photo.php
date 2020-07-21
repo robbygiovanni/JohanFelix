@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Johan Felix</title>
-    <link rel="icon" href="../../../public/Images/icon.svg">
+    <link rel="icon" href="<?= base_url(); ?>/Images/icon.svg">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../public/CSS/photo.css">
-    <link rel="stylesheet" href="../../../public/CSS/animation.css">
-    <link rel="stylesheet" href="../../../public/CSS/main.css">
-    <link rel="stylesheet" href="../../../public/CSS/loading.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/animation.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/main.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/loading.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
@@ -50,12 +50,12 @@
     <section id="myWork">
         <div class="box">
             <nav class="nav">
-                <a class="nav-title" href="http://localhost/JFP/app/Views/pages/photo.php">Johan Felix</a>
-                <li class="nav-item dropdown">
+                <a class="nav-title" href="<?= base_url(); ?>/Home">Johan Felix</a>
+                <li class=" nav-item dropdown">
                     <a class="nav-link cool-link photo active" href="#" id="dropdown01" data-toggle="collapse" data-target="#dd" aria-haspopup="true" aria-expanded="false">photo</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="dd">
                         <a class="dropdown-item active" href="#">potrait</a>
-                        <a class="dropdown-item" href="#">landscape</a>
+                        <a class="dropdown-item">landscape</a>
                         <a class="dropdown-item" href="#">product</a>
                     </div>
                 </li>

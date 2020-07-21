@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\PhotoModel;
 
-class Home extends BaseController
+class Contact extends BaseController
 {
     protected $photoModel;
 
@@ -13,13 +13,9 @@ class Home extends BaseController
         $this->photoModel = new PhotoModel();
     }
 
-
     public function index()
     {
-        $data = [
-            'photo' => $this->photoModel->getPhoto()
-        ];
-        return view('home', $data);
+        return view('contact');
     }
 
     //--------------------------------------------------------------------
