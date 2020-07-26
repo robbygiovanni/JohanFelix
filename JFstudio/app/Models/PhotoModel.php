@@ -10,13 +10,8 @@ class PhotoModel extends Model
     protected $primaryKey = 'id_photo';
 
 
-    public function getPhoto($kategori = false)
+    public function getPhoto($kategori)
     {
-        if ($kategori == false) {
-
-            return $this->where(['kategori_photo' => 'portrait'])->findAll();
-        }
-
         return $this->where(['kategori_photo' => $kategori])->findAll();
     }
 }

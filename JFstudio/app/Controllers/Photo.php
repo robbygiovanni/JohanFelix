@@ -16,7 +16,7 @@ class Photo extends BaseController
     public function index()
     {
         $data = [
-            'photo' => $this->photoModel->getPhoto()
+            'photo' => $this->photoModel->getPhoto('portrait')
         ];
 
         return view('photo/portrait', $data);
