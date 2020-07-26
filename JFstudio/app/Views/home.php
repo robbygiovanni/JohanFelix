@@ -30,7 +30,6 @@
         <div class="imageHeroContainer fadeIn rellax" data-rellax-speed="-3">
             <!-- <img src="../../../public/Images/hero.jpg" alt="" class="imageHero"> -->
             <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94670f99486865.5ef3b4f8f1232.jpg" alt="" class="imageHero">
-
         </div>
         <div class="heroTitle rellax" data-rellax-speed="5">
             <p class="heroName fadeTitleInDown">Johan Felix</p>
@@ -62,7 +61,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
-                        <a class="dropdown-item" href="#">music video</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video">music video</a>
                         <a class="dropdown-item" href="#">short movie</a>
                         <a class="dropdown-item" href="#">product</a>
                         <a class="dropdown-item" href="#">engagement</a>
@@ -70,7 +69,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">gear</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Gear">gear</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cool-link" href="#">achievement</a>
