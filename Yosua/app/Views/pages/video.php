@@ -207,6 +207,7 @@
         var imgCtr = 1;
         $("body").css("overflow", "hidden");
         $(document).ready(function() {
+            $(".prevLoadingText").hide();
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
             $(".previewContainer").css("display", "none");
@@ -253,48 +254,6 @@
             $("#myWork").animate({
                 scrollTop: 0
             }, 3000);
-        });
-
-        $(".arrowDown").mouseenter(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "transparent");
-        });
-        $(".arrowDown").mouseleave(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "#fff");
-        });
-
-        $(".heroSubDiv").mouseenter(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "transparent");
-        });
-
-        $(".heroSubDiv").mouseleave(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "#fff");
-        });
-
-        $(".arrowDown").click(function() {
-            $("#myWork").css("position", "absolute");
-            $("#myWork").css("left", "0");
-            $("#myWork").animate({
-                top: "0"
-            }, 2000, function() {
-                $(".heroThumb").css("display", "none");
-                $("#myWork").css("position", "relative");
-            });
-            $(".imageHeroContainer").css("position", "absolute");
-            $(".imageHeroContainer").animate({
-                top: "-=100vh"
-            }, 4000);
-            $(".heroTitle").css("position", "absolute");
-            $(".heroTitle").animate({
-                top: "-=100vh"
-            }, 2000);
         });
 
         //////////Dropdown Collapse//////////
@@ -368,21 +327,26 @@
 
         function previewImg(direction) {
             $('.videoPreview').fadeOut(500);
-            if (direction == "prev") {
-                imgCtr--;
-                if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
-            } else {
-                if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
-                else imgCtr++;
+            var timeouts = setTimeout(loadIframe, 500);
+
+            function loadIframe(params) {
+                if (direction == "prev") {
+                    imgCtr--;
+                    if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
+                } else {
+                    if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
+                    else imgCtr++;
+                }
+                var vidID = $("#gambar" + imgCtr).attr("src");
+                vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
+                console.log(vidID);
+                var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
+                console.log(src);
+                var title = $("#title" + imgCtr).text();
+                $("#titlePreview").text(title);
+                $(".videoPreview").attr("src", src);
             }
-            var vidID = $("#gambar" + imgCtr).attr("src");
-            vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
-            console.log(vidID);
-            var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
-            console.log(src);
-            var title = $("#title" + imgCtr).text();
-            $("#titlePreview").text(title);
-            $(".videoPreview").attr("src", src);
+
         }
         $(".videoPreview").on("load", function() {
             $('.videoPreview').fadeIn(500);
