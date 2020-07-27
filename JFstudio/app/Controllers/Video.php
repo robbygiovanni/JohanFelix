@@ -31,6 +31,23 @@ class Video extends BaseController
         return view('video/shortMovie', $data);
     }
 
+    public function Product()
+    {
+        $data = [
+            'video' => $this->videoModel->getVideo('product')
+        ];
+
+        return view('video/product', $data);
+    }
+
+    public function Engagement()
+    {
+        $data = [
+            'video' => $this->videoModel->getVideo('engagement')
+        ];
+
+        return view('video/engagement', $data);
+    }
 
     //--------------------------------------------------------------------
 }

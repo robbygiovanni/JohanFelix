@@ -384,6 +384,9 @@ body {
   width: 100%;
   height: 80%;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .videoPreview {
@@ -423,4 +426,74 @@ body {
 
 .img-gearItem > img {
   width: 100%;
+}
+
+.achievementContainer {
+  display: flex;
+  height: 75vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+.listAchievement {
+  width: 60%;
+  height: 80%;
+  padding: 0 1em;
+  direction: rtl;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listAchievement::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.listAchievement::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.listAchievement::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid black;
+}
+
+.previewAchievement {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.titleAchievement {
+  font-family: Catamaran;
+  font-weight: 500;
+  font-size: 1.8em;
+  color: black;
+  opacity: 0.55;
+  margin: 0.3em 0;
+}
+
+.titleAchievement:hover {
+  cursor: pointer;
+}
+
+.previewImg {
+  width: auto;
+  height: 100%;
+  display: none;
+}
+
+.previewVid {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.chose {
+  opacity: 1;
 }

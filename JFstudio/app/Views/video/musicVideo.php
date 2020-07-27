@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/photo.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/animation.css">
-    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/main.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/CSS/home.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/CSS/loading.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -42,17 +42,17 @@
                     <a class="nav-link cool-link video active" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
                         <a class="dropdown-item active" href="<?= base_url(); ?>/Video">music video</a>
-                        <a class="dropdown-item" href="#">short movie</a>
-                        <a class="dropdown-item" href="#">product</a>
-                        <a class="dropdown-item" href="#">engagement</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/ShortMovie">short movie</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Product">product</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
                         <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p> </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">gear</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Gear">gear</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">achievement</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Achievement">achievement</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cool-link" href="<?= base_url(); ?>/Contact">contact</a>
@@ -64,72 +64,27 @@
                 <div class="grid-col grid-col--2"></div>
                 <div class="grid-col grid-col--3"></div>
                 <!-- items -->
-                <div class="grid-item">
-                    <img id="gambar1" class="video-item" src="http://i.ytimg.com/vi/sv-l7YTbSGk/maxresdefault.jpg" alt="picture">
-                    <div class="video-title">
-                        <span class="video-titleText" id="title1">KOLD - Hawaii v2.0 - Be Wild</span>
+                <?php
+                $ctr = 1;
+
+                foreach ($video as $videos) :
+                    echo $videos['link_video']; ?>
+
+                    <div class="grid-item">
+                        <img id="gambar<?= $ctr ?>" class="video-item" src="<?= $videos['link_video'] ?>" alt="picture">
+                        <div class="video-title">
+                            <span class="video-titleText" id="title<?= $ctr ?>"><?= $videos['nama_video'] ?></span>
+                        </div>
+                        <div class='playIcon'>
+                            <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
+                                <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
+                            </svg>
+                        </div>
                     </div>
-                    <div class='playIcon'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                            <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <img id="gambar2" class="video-item" src="http://i.ytimg.com/vi/CIrowsD7QBk/maxresdefault.jpg" alt="picture">
-                    <div class="video-title">
-                        <span class="video-titleText" id="title2">Exploring Indonesia - The Last Paradise</span>
-                    </div>
-                    <div class='playIcon'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                            <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <img id="gambar3" class="video-item" src="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" alt="picture">
-                    <div class="video-title">
-                        <span class="video-titleText" id="title3">Indonesia - Our Home | Cinematic Video</span>
-                    </div>
-                    <div class='playIcon'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                            <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <img id="gambar4" class="video-item" src="http://i.ytimg.com/vi/4jjDNSnXNig/maxresdefault.jpg" alt="picture">
-                    <div class="video-title">
-                        <span class="video-titleText" id="title4">Short Escape to Jogja</span>
-                    </div>
-                    <div class='playIcon'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                            <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <img id="gambar5" class="video-item" src="http://i.ytimg.com/vi/uwK6Os3UtF8/maxresdefault.jpg" alt="picture">
-                    <div class="video-title">
-                        <span class="video-titleText" id="title5">Norway | Cinematic Video</span>
-                    </div>
-                    <div class='playIcon'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                            <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                        </svg>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <img id="gambar6" class="video-item" src="http://i.ytimg.com/vi/rcnLTnGGBU0/maxresdefault.jpg" alt="picture">
-                    <div class="video-title">
-                        <span class="video-titleText" id="title6">Japan EPIC Travel Video</span>
-                    </div>
-                    <div class='playIcon'>
-                        <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                            <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                        </svg>
-                    </div>
-                </div>
+                <?php
+                    $ctr++;
+                endforeach; ?>
+
             </div>
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
@@ -186,7 +141,7 @@
                         </div>
                     </div>
                     <div class="footerPreview">
-                        <p class="footerPreviewText">photo / portrait</p>
+                        <p class="footerPreviewText">video / music video</p>
                     </div>
                 </div>
                 <div class="closePreview">
@@ -207,6 +162,7 @@
         var imgCtr = 1;
         $("body").css("overflow", "hidden");
         $(document).ready(function() {
+            $(".prevLoadingText").hide();
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
             $(".previewContainer").css("display", "none");
@@ -253,48 +209,6 @@
             $("#myWork").animate({
                 scrollTop: 0
             }, 3000);
-        });
-
-        $(".arrowDown").mouseenter(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "transparent");
-        });
-        $(".arrowDown").mouseleave(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "#fff");
-        });
-
-        $(".heroSubDiv").mouseenter(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 30%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "transparent");
-        });
-
-        $(".heroSubDiv").mouseleave(function() {
-            $(".arrowDown").css("transform", "translate3d(0, 0%, 0)");
-            $(".arrowDown").css("transition-duration", "0.5s");
-            $("#Path_1955").attr("fill", "#fff");
-        });
-
-        $(".arrowDown").click(function() {
-            $("#myWork").css("position", "absolute");
-            $("#myWork").css("left", "0");
-            $("#myWork").animate({
-                top: "0"
-            }, 2000, function() {
-                $(".heroThumb").css("display", "none");
-                $("#myWork").css("position", "relative");
-            });
-            $(".imageHeroContainer").css("position", "absolute");
-            $(".imageHeroContainer").animate({
-                top: "-=100vh"
-            }, 4000);
-            $(".heroTitle").css("position", "absolute");
-            $(".heroTitle").animate({
-                top: "-=100vh"
-            }, 2000);
         });
 
         //////////Dropdown Collapse//////////
@@ -368,28 +282,31 @@
 
         function previewImg(direction) {
             $('.videoPreview').fadeOut(500);
-            if (direction == "prev") {
-                imgCtr--;
-                if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
-            } else {
-                if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
-                else imgCtr++;
+            var timeouts = setTimeout(loadIframe, 500);
+
+            function loadIframe(params) {
+                if (direction == "prev") {
+                    imgCtr--;
+                    if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
+                } else {
+                    if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
+                    else imgCtr++;
+                }
+                var vidID = $("#gambar" + imgCtr).attr("src");
+                vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
+                console.log(vidID);
+                var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
+                console.log(src);
+                var title = $("#title" + imgCtr).text();
+                $("#titlePreview").text(title);
+                $(".videoPreview").attr("src", src);
             }
-            var vidID = $("#gambar" + imgCtr).attr("src");
-            vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
-            console.log(vidID);
-            var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
-            console.log(src);
-            var title = $("#title" + imgCtr).text();
-            $("#titlePreview").text(title);
-            $(".videoPreview").attr("src", src);
+
         }
         $(".videoPreview").on("load", function() {
             $('.videoPreview').fadeIn(500);
         });
-        $(".previewTitle").click(function() {
-            document.location.href = "http://localhost/JFP/app/Views/pages/photo.php";
-        });
+
         // var prevLink;
         // $("#item1").mouseenter(function() {
         //     var link = $("#preview1").attr("src");

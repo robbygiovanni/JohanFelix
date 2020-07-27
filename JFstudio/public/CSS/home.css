@@ -147,6 +147,8 @@ body {
 
 .grid-item {
   overflow: hidden;
+  position: relative;
+  background-color: black;
 }
 
 .grid-item:hover .img-item {
@@ -194,7 +196,13 @@ body {
 }
 
 .iconSosmed {
-  transition: transform 0.5s, fill 0.5s;
+  transition: transform 0.5s;
+}
+
+#Icon_awesome-instagram,
+#Icon_simple-behance,
+#Icon_material-email {
+  transition: fill 0.5s;
 }
 
 .iconSosmed:hover {
@@ -285,9 +293,10 @@ body {
   height: 100%;
   overflow: hidden;
   display: flex;
-  justify-content: center;
   align-items: center;
   position: relative;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .previewImg {
@@ -333,4 +342,159 @@ body {
 
 .nextArea:hover {
   cursor: pointer;
+}
+
+.video-item {
+  width: 100%;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.video-title {
+  position: absolute;
+  left: -100%;
+  top: 3%;
+  z-index: 3;
+  background-color: white;
+}
+
+.video-titleText {
+  color: #3d3d3d;
+  padding: 1em;
+  font-family: Catamaran;
+  font-weight: 800;
+}
+
+.playIcon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.playIcon:hover {
+  cursor: pointer;
+}
+
+.iframeContainer {
+  width: 100%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoPreview {
+  width: 100%;
+  height: 100%;
+}
+
+.gear-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border: solid 1px #ebebeb;
+  transition: background-color 1s;
+  padding: 2em;
+}
+
+.gear-item:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.img-gearItem {
+  width: 80%;
+  mix-blend-mode: multiply;
+  margin-bottom: 2em;
+}
+
+.gear-name {
+  font-size: 1.5em;
+  font-family: Roboto;
+  font-weight: 400;
+  z-index: 3;
+  max-width: 250px;
+  text-align: center;
+}
+
+.img-gearItem > img {
+  width: 100%;
+}
+
+.achievementContainer {
+  display: flex;
+  height: 75vh;
+  overflow: hidden;
+  align-items: center;
+}
+
+.listAchievement {
+  width: 40%;
+  height: 100%;
+  padding: 0 1em;
+  direction: rtl;
+  overflow: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.listAchievement::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+.listAchievement::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+.listAchievement::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid black;
+}
+
+.previewAchievement {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.titleAchievement {
+  font-family: Catamaran;
+  font-weight: 500;
+  font-size: 1.8em;
+  color: black;
+  opacity: 0.55;
+  margin: 0.3em 0;
+}
+
+.titleAchievement:hover {
+  cursor: pointer;
+}
+
+.previewImg {
+  width: auto;
+  height: 100%;
+  display: none;
+}
+
+.previewVid {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.chose {
+  opacity: 1;
 }

@@ -38,27 +38,26 @@
                         <a id="btnProduct" class="dropdown-item" href="<?= base_url(); ?>/Photo/Product">product</a>
                     </div>
                 </li>
-                <li class=" nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
-                        <a class="dropdown-item" href="#">music video</a>
-                        <a class="dropdown-item" href="#">short movie</a>
-                        <a class="dropdown-item" href="#">product</a>
-                        <a class="dropdown-item" href="#">engagement</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video">music video</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/ShortMovie">short movie</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Product">product</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
                         <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p> </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">gear</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Gear">gear</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">achievement</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Achievement">achievement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link active" href="#">contact</a>
+                    <a class="nav-link cool-link active" href="<?= base_url(); ?>/Contact">contact</a>
                 </li>
             </nav>
-
             <div class="box2">
                 <h4 class="contactMe">Contact Me</h4>
                 <form method="post">

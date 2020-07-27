@@ -39,17 +39,17 @@
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
+                    <a class="nav-link cool-link video active" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video">music video</a>
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video/ShortMovie">short movie</a>
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video/Product">product</a>
-                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
-                        <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p> </a>
+                        <a class="dropdown-item active" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
+                        <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p></a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link active" href="<?= base_url(); ?>/Gear">gear</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Gear">gear</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link cool-link" href="<?= base_url(); ?>/Achievement">achievement</a>
@@ -58,83 +58,34 @@
                     <a class="nav-link cool-link" href="<?= base_url(); ?>/Contact">contact</a>
                 </li>
             </nav>
-            <p class="pageIndicator">gear</p>
-
+            <p class="pageIndicator">video / engagement</p>
             <div id="displayArea" class="grid">
                 <div class="grid-col grid-col--1"></div>
                 <div class="grid-col grid-col--2"></div>
                 <div class="grid-col grid-col--3"></div>
-                <div class="grid-col grid-col--4"></div>
                 <!-- items -->
-                <div class="grid-item gear-item" title="Click to find it" link="https://www.tokopedia.com/teddyyap2278/camera-sony-a6000-kit-16-50-f3-5-5-6oss?trkid=f%3DCa3707L000P0W0S0Sh%2CCo0Po0Fr0Cb0_src%3Dsearch_page%3D1_ob%3D23_q%3Dkamera+sony+a6000_bmexp%3D43_po%3D1_catid%3D3707_bmexp%3D43&whid=0">
-                    <div class="img-gearItem">
-                        <img id="gambar1" src="https://matalelaki.com/media/2b/27/37/2b273779eaafcf25a1e542728c9964a3.jpg" alt="picture">
+                <?php
+                $ctr = 1;
+
+                foreach ($video as $videos) :
+                    echo $videos['link_video']; ?>
+
+                    <div class="grid-item">
+                        <img id="gambar<?= $ctr ?>" class="video-item" src="<?= $videos['link_video'] ?>" alt="picture">
+                        <div class="video-title">
+                            <span class="video-titleText" id="title<?= $ctr ?>"><?= $videos['nama_video'] ?></span>
+                        </div>
+                        <div class='playIcon'>
+                            <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
+                                <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
+                            </svg>
+                        </div>
                     </div>
-                    <p class="gear-name">Sony A6000</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar2" src="https://images-na.ssl-images-amazon.com/images/I/61rLRDGm7IL._AC_SX679_.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">Rollei Compact Traveler No.1 Aluminium</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar3" src="https://images-na.ssl-images-amazon.com/images/I/614t94rgmEL._AC_SY355_.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">Sony SEL-85F14GM</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar4" src="https://img.vistek.net/prodimg/large/434111.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">Zhiyun Crane M2 Stabilizer</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar5" src="https://doss.co.id/image/Sony/sony%20acc/sony%20sd%2032gb%20m%20.JPG" alt="picture">
-                    </div>
-                    <p class="gear-name">Sony SDHC-Card</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar6" src="https://cdn.shopify.com/s/files/1/0250/1009/products/32-silver-1500x_1000x1000.jpg?v=1584642199" alt="picture">
-                    </div>
-                    <p class="gear-name">Rogue 32" Super Soft Silver Reflector</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar7" src="https://cdn.fado.vn/images/I/51uqv9eVYyL._SR600,600_.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">ND4 Neewer UV Filter</p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar8" src="https://ecs7.tokopedia.net/img/cache/700/product-1/2018/11/1/339822/339822_9d917f7d-3cf5-4511-a373-e730d543a04b_700_398.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">Samsung T5 Portable SSD 2TB </p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar9" src="https://www.bhphotovideo.com/images/images2500x2500/peak_design_sl_bk_3_slide_camera_strap_black_1372679.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">Peak Design Slide Black Camera Strap </p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar10" src="https://images-na.ssl-images-amazon.com/images/I/41PVL8BPYqL._SS600_.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">NP-FW50 RAVPower Batteries Charger </p>
-                </div>
-                <div class="grid-item gear-item" title="Click to find it">
-                    <div class="img-gearItem">
-                        <img id="gambar11" src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//92/MTA-3165527/casell_casell-vertical-battery-grip-for-sony-alpha-a6300-with-remote_full05.jpg" alt="picture">
-                    </div>
-                    <p class="gear-name">Casell Vertical Battery Grip </p>
-                </div>
+                <?php
+                    $ctr++;
+                endforeach; ?>
+
             </div>
-
-
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.272" height="35.255" viewBox="0 0 75.272 75.255">
@@ -152,8 +103,6 @@
                     </svg>
                 </div>
             </div>
-
-
             <div id="backTop" title="Back to Top">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
                     <g id="Group_201" data-name="Group 201" transform="translate(1682 254)">
@@ -161,6 +110,45 @@
                         <path id="Icon_ionic-ios-arrow-round-up" data-name="Icon ionic-ios-arrow-round-up" d="M83.286,47.777a5,5,0,0,1-7.038.038L52.954,24.6v88.472a4.973,4.973,0,0,1-9.945,0V24.6L19.715,47.853a5.034,5.034,0,0,1-7.038-.038,4.952,4.952,0,0,1,.038-7L44.463,9.3h0a5.584,5.584,0,0,1,1.568-1.033,4.746,4.746,0,0,1,1.912-.382A4.986,4.986,0,0,1,51.424,9.3L83.172,40.815A4.873,4.873,0,0,1,83.286,47.777Z" transform="translate(-1630.247 -216.882)" fill="#f9f9f9" />
                     </g>
                 </svg>
+            </div>
+            <div class="previewContainer">
+                <div class="previewArea" style="width:80%">
+                    <div class="headerPreview">
+                        <h3 class="previewTitle">Johan Felix</h3>
+                    </div>
+                    <div class="mainPreview">
+                        <div class="prevArea">
+                            <div class="arrowIcon" id="prev" style="margin-right: 0.5em">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
+                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.216,11.51a.919.919,0,0,1,.007,1.294l-4.268,4.282H27.218a.914.914,0,0,1,0,1.828H10.955L15.23,23.2a.925.925,0,0,1-.007,1.294.91.91,0,0,1-1.287-.007L8.142,18.647h0a1.026,1.026,0,0,1-.19-.288.872.872,0,0,1-.07-.352.916.916,0,0,1,.26-.64l5.794-5.836A.9.9,0,0,1,15.216,11.51Z" transform="translate(-7.882 -11.252)" />
+                                </svg>
+                            </div>
+                            <p class="prevText">prev</p>
+                        </div>
+                        <div class="previewImgContainer">
+                            <div class="iframeContainer">
+                                <iframe class="videoPreview" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <h2 id="titlePreview">Judul Video</h2>
+                        </div>
+                        <div class="nextArea">
+                            <p class="nextText">next</p>
+                            <div class="arrowIcon" id="next" style="margin-left: 0.5em">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
+                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M20.792,11.51a.919.919,0,0,0-.007,1.294l4.268,4.282H8.789a.914.914,0,0,0,0,1.828H25.053L20.777,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.027,1.027,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.792,11.51Z" transform="translate(-7.882 -11.252)" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerPreview">
+                        <p class="footerPreviewText">video / engagement</p>
+                    </div>
+                </div>
+                <div class="closePreview">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.422" viewBox="0 0 13.426 13.422">
+                        <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z" transform="translate(-11.285 -11.289)" />
+                    </svg>
+                </div>
             </div>
         </div>
     </section>
@@ -174,6 +162,7 @@
         var imgCtr = 1;
         $("body").css("overflow", "hidden");
         $(document).ready(function() {
+            $(".prevLoadingText").hide();
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
             $(".previewContainer").css("display", "none");
@@ -253,16 +242,118 @@
         });
         /////////////////////////////////////
         ////////////Image Preview////////////
-        $(".gear-item").click(function() {
-            openInNewTab($(this).attr("link"));
+        var preview = false;
+        $(".grid-item").click(function() {
+            if (!preview) {
+                $(".previewContainer").css("display", "block");
+                $(".previewContainer").addClass("fadeIn");
+                ctr = $(this).children(".video-item").attr("id").replace('gambar', '');
+                console.log(ctr);
+                imgCtr = parseInt(ctr);
+                var vidID = $("#gambar" + imgCtr).attr("src");
+                vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
+                console.log(vidID);
+                var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
+                console.log(src);
+                $(".videoPreview").attr("src", src);
+                var title = $(this).children(".video-title").children(".video-titleText").text();
+                console.log(title);
+                $("#titlePreview").text(title);
+                var fadePreview = setTimeout('$(".previewContainer").removeClass("fadeIn");', 1000);
+                preview = true;
+            }
         });
-        $(".previewTitle").click(function() {
-            document.location.href = "http://localhost/JFP/app/Views/pages/photo.php";
+        $(".prevArea").click(function() {
+            previewImg("prev");
         });
-        /////////////////////////////////////
-        $(".gear").click(function() {
-            $("#loading").addClass("fadeIn");
-            document.location.href = "http://localhost/JFP/app/Views/pages/video.php";
+
+        $(".nextArea").click(function() {
+            previewImg("next");
+        });
+
+        $(".closePreview").click(function() {
+            $(".previewContainer").addClass("fadeOut");
+            var fadePreview = setTimeout(function() {
+                $(".previewContainer").css("display", "none");
+                $(".previewContainer").removeClass("fadeOut");
+            }, 1000);
+            preview = false;
+        });
+
+        function previewImg(direction) {
+            $('.videoPreview').fadeOut(500);
+            var timeouts = setTimeout(loadIframe, 500);
+
+            function loadIframe(params) {
+                if (direction == "prev") {
+                    imgCtr--;
+                    if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
+                } else {
+                    if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
+                    else imgCtr++;
+                }
+                var vidID = $("#gambar" + imgCtr).attr("src");
+                vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
+                console.log(vidID);
+                var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
+                console.log(src);
+                var title = $("#title" + imgCtr).text();
+                $("#titlePreview").text(title);
+                $(".videoPreview").attr("src", src);
+            }
+
+        }
+        $(".videoPreview").on("load", function() {
+            $('.videoPreview').fadeIn(500);
+        });
+
+        // var prevLink;
+        // $("#item1").mouseenter(function() {
+        //     var link = $("#preview1").attr("src");
+        //     prevLink = link;
+        //     var newlink = link + "&amp;autoplay=1&amp;mute=1&amp;rel=0"
+        //     $("#preview1").attr("src", newlink);
+        //     $("#preview1").css("display", "block");
+        //     $("#preview1").css("z-index", 3);
+        //     $("#gambar1").css("z-index", 1);
+        //     $("#gambar1").css("display", "none");
+        // })
+        // $("#item1").mouseleave(function() {
+        //     $("#gambar1").addClass("fadeIn");
+        //     $("#gambar1").css("display", "block");
+        //     $("#gambar1").css("display", "block");
+        //     $("#gambar1").css("z-index", 3);
+        //     $("#preview1").css("z-index", 1);
+        //     var fadeout = setTimeout(() => {
+        //         $("#preview1").attr("src", prevLink);
+        //         $("#gambar1").removeClass("fadeIn");
+        //     }, 1000);
+        // }) 
+
+        $(".grid-item").mouseenter(function() {
+            $(this).children(".video-title").clearQueue();
+            $(this).children(".video-item").clearQueue();
+            $(this).children(".playIcon").clearQueue();
+            $(this).children(".video-title").animate({
+                left: "0"
+            }, 500);
+            $(this).children(".video-item").animate({
+                opacity: "0.5"
+            }, 500);
+            $(this).children(".playIcon").animate({
+                opacity: "1"
+            }, 500);
+        });
+        $(".grid-item").mouseleave(function() {
+            $(this).children(".video-title").animate({
+                left: "-100%"
+            }, 500);
+            $(this).children(".video-item").animate({
+                opacity: "1"
+            }, 500);
+            $(this).children(".playIcon").animate({
+                opacity: "0"
+            }, 500);
         });
     </script>
 </body>

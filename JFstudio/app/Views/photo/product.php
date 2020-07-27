@@ -40,21 +40,21 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
-                        <a class="dropdown-item" href="#">music video</a>
-                        <a class="dropdown-item" href="#">short movie</a>
-                        <a class="dropdown-item" href="#">product</a>
-                        <a class="dropdown-item" href="#">engagement</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video">music video</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/ShortMovie">short movie</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Product">product</a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
                         <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p> </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">gear</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Gear">gear</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">achievement</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Achievement">achievement</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="#">contact</a>
+                    <a class="nav-link cool-link" href="<?= base_url(); ?>/Contact">contact</a>
                 </li>
             </nav>
             <p class="pageIndicator">photo / prodcut</p>
@@ -73,39 +73,6 @@
                 <?php
                     $ctr++;
                 endforeach; ?>
-                <!-- <div class="grid-item">
-                    <img id="gambar2" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e7cda999486865.5ef3b8a904492.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar3" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/d41f4a99486865.5ef3be1375dfa.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar4" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/4b321599486865.5ef3be14f03d0.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar5" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/be5e8399486865.5ef3b4fa925e5.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar6" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/9342b899486865.5ef3b4f8f0c5b.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar7" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/9e018e94062009.5edf911c6138b.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar8" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/65f89694062009.5ee7880e661c9.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar9" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fc8eef94062009.5ee7880f1a2b3.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar10" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/5505e594062009.5ee7880e65795.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar11" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/2eea6096969385.5ec59c41d1fc0.jpg" alt="picture">
-                </div>
-                <div class="grid-item">
-                    <img id="gambar12" class="img-item" src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/1a431699486865.5ef3b4fbaa747.jpg" alt="picture">
-                </div> -->
             </div>
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
