@@ -62,27 +62,29 @@
             <p class="pageIndicator">achievement</p>
 
             <div id="displayArea" class="achievementContainer">
-                <div class="listAchievement">
-                    <p class="titleAchievement" id="achieve1" style="margin-top: 1em;" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
-                    <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
-                    <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                    <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
-                    <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
-                    <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
-                    <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                    <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
-                    <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
-                    <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
-                    <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                    <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
-                    <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
-                    <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
-                    <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                    <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                <div class="listContainer">
+                    <div class="listAchievement">
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                    </div>
                 </div>
                 <div class="previewAchievement">
                     <h3 class="prevText">Preview</h3>
-                    <img class="previewImg" src="">
+                    <img class="previewImage" src="">
                     <iframe class="previewVid" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -128,6 +130,12 @@
         $(document).ready(function() {
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
+            if ($(".listAchievement").offsetHeight < $(".listAchievement").scrollHeight ||
+                $(".listAchievement").offsetWidth < $(".listAchievement").scrollWidth) {
+                $(".listAchievement").css("justify-content", "center");
+            } else {
+                $(".listAchievement").css("justify-content", "flex-start");
+            }
         });
         /////////Munculin Box kanan bawah//////////////
         var scroll = setInterval(function() {
@@ -220,15 +228,15 @@
                     complete: function() {
                         if (tipe == "image") {
                             $(".previewVid").css("display", "none");
-                            $(".previewImg").attr("src", link);
+                            $(".previewImage").attr("src", link);
                             $(".previewVid").attr("src", "");
-                            $(".previewImg").css("display", "block");
+                            $(".previewImage").css("display", "block");
                             $(".previewAchievement").animate({
                                 opacity: "1"
                             }, 500);
                         } else {
-                            $(".previewImg").css("display", "none");
-                            $(".previewImg").attr("src", "");
+                            $(".previewImage").css("display", "none");
+                            $(".previewImage").attr("src", "");
                             $(".previewVid").attr("src", link);
                             $(".previewVid").css("display", "block");
                             $(".previewVid").on("load", function() {
