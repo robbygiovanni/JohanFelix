@@ -60,7 +60,7 @@
             </nav>
             <div class="box2">
                 <h4 class="contactMe">Contact Me</h4>
-                <form method="post">
+                <form method="post" action="">
                     <div class="form-group">
                         <label for="exampleInputName1">Name *</label>
                         <input type="text" class="form-control">
