@@ -38,7 +38,7 @@
                         <a id="btnProduct" class="dropdown-item" href="<?= base_url(); ?>/Photo/Product">product</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+                <li class=" nav-item dropdown">
                     <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video">music video</a>
@@ -60,15 +60,27 @@
             </nav>
 
             <p class="pageIndicator">achievement</p>
-            <div id="displayArea" class="achievementContainer">
-                <div class="listAchievement">
-                    <div class="titleAchievement" id="achieve1" style="margin-top: 1em;" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">
-                        <a>1st Discover Indonesia Photography Competition</a>
-                    </div>
-                    <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
-                    <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                    <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
 
+            <div id="displayArea" class="achievementContainer">
+                <div class="listContainer">
+                    <div class="listAchievement">
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
+                        <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
+                        <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                    </div>
                 </div>
                 <div class="previewAchievement">
                     <h3 class="prevText">Preview</h3>
@@ -118,6 +130,12 @@
         $(document).ready(function() {
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
+            if ($(".listAchievement").offsetHeight < $(".listAchievement").scrollHeight ||
+                $(".listAchievement").offsetWidth < $(".listAchievement").scrollWidth) {
+                $(".listAchievement").css("justify-content", "center");
+            } else {
+                $(".listAchievement").css("justify-content", "flex-start");
+            }
         });
         /////////Munculin Box kanan bawah//////////////
         var scroll = setInterval(function() {
@@ -185,15 +203,7 @@
         $(".gear-item").click(function() {
             openInNewTab($(this).attr("link"));
         });
-        $(".previewTitle").click(function() {
-            document.location.href = "http://localhost/JFP/app/Views/pages/photo.php";
-        });
         /////////////////////////////////////
-        $(".gear").click(function() {
-            $("#loading").addClass("fadeIn");
-            document.location.href = "http://localhost/JFP/app/Views/pages/gear.php";
-        });
-
         $(".titleAchievement").click(function() {
             $(".previewAchievement").clearQueue();
             $(this).clearQueue();
@@ -212,7 +222,7 @@
                             $(".previewVid").css("display", "none");
                             $(".previewImage").attr("src", link);
                             $(".previewVid").attr("src", "");
-                            $(".previewIma").css("display", "block");
+                            $(".previewImage").css("display", "block");
                             $(".previewAchievement").animate({
                                 opacity: "1"
                             }, 500);
