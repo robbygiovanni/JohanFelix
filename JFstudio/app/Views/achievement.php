@@ -72,7 +72,7 @@
                 </div>
                 <div class="previewAchievement">
                     <h3 class="prevText">Preview</h3>
-                    <img class="previewImg" src="">
+                    <img class="previewImage" src="">
                     <iframe class="previewVid" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -210,15 +210,15 @@
                     complete: function() {
                         if (tipe == "image") {
                             $(".previewVid").css("display", "none");
-                            $(".previewImg").attr("src", link);
+                            $(".previewImage").attr("src", link);
                             $(".previewVid").attr("src", "");
-                            $(".previewImg").css("display", "block");
+                            $(".previewIma").css("display", "block");
                             $(".previewAchievement").animate({
                                 opacity: "1"
                             }, 500);
                         } else {
-                            $(".previewImg").css("display", "none");
-                            $(".previewImg").attr("src", "");
+                            $(".previewImage").css("display", "none");
+                            $(".previewImage").attr("src", "");
                             $(".previewVid").attr("src", link);
                             $(".previewVid").css("display", "block");
                             $(".previewVid").on("load", function() {
