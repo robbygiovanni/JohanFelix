@@ -436,15 +436,16 @@ body {
 }
 
 .listAchievement {
-  width: 40%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   padding: 0 1em;
   direction: rtl;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
 }
 
 .listAchievement::-webkit-scrollbar {
@@ -478,11 +479,15 @@ body {
   margin: 0.3em 0;
 }
 
+#achieve1 {
+  margin: 0 0;
+}
+
 .titleAchievement:hover {
   cursor: pointer;
 }
 
-.previewImg {
+.previewImage {
   width: auto;
   height: 100%;
   display: none;
@@ -496,4 +501,11 @@ body {
 
 .chose {
   opacity: 1;
+}
+
+.listContainer {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
 }
