@@ -509,3 +509,33 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* about */
+.borderAbout {
+  width: 100%;
+  height: 580px;
+  display: flex;
+}
+
+.imgAbout {
+  width: 28%;
+  height: 100%;
+}
+
+.textAbout {
+  width: 30%;
+  height: 100%;
+}
+
+.nameAbout {
+  margin-left: 20px;
+  font-size: 1.5vw;
+  font-family: "PT serif";
+}
+
+.descAbout {
+  margin-left: 20px;
+  font-size: 0.8vw;
+  font-family: "Roboto";
+  color: #868686;
+}

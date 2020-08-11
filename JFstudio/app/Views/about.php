@@ -38,14 +38,14 @@
                         <a id="btnProduct" class="dropdown-item" href="<?= base_url(); ?>/Photo/Product">product</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link cool-link video active" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
+                <li class=" nav-item dropdown">
+                    <a class="nav-link cool-link video" href="#" id="dropdown01" data-toggle="collapse" data-target="#ee" aria-haspopup="true" aria-expanded="false">video</a>
                     <div class="dropdown-menu p-0 collapse" aria-labelledby="dropdown01" id="ee">
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video">music video</a>
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video/ShortMovie">short movie</a>
                         <a class="dropdown-item" href="<?= base_url(); ?>/Video/Product">product</a>
-                        <a class="dropdown-item active" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
-                        <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p></a>
+                        <a class="dropdown-item" href="<?= base_url(); ?>/Video/Engagement">engagement</a>
+                        <a class="dropdown-item" href="#">prewedding <p class="comingsoon">comingsoon</p> </a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -58,37 +58,29 @@
                     <a class="nav-link cool-link" href="<?= base_url(); ?>/Contact">contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link cool-link" href="<?= base_url(); ?>/About">about me</a>
+                    <a class="nav-link cool-link active" href="<?= base_url(); ?>/About">about me</a>
                 </li>
             </nav>
-            <p class="pageIndicator">video / engagement</p>
-            <div id="displayArea" class="grid">
-                <div class="grid-col grid-col--1"></div>
-                <div class="grid-col grid-col--2"></div>
-                <div class="grid-col grid-col--3"></div>
-                <!-- items -->
-                <?php
-                $ctr = 1;
-
-                foreach ($video as $videos) :
-                    echo $videos['link_video']; ?>
-
-                    <div class="grid-item">
-                        <img id="gambar<?= $ctr ?>" class="video-item" src="<?= $videos['link_video'] ?>" alt="picture">
-                        <div class="video-title">
-                            <span class="video-titleText" id="title<?= $ctr ?>"><?= $videos['nama_video'] ?></span>
-                        </div>
-                        <div class='playIcon'>
-                            <svg xmlns='http://www.w3.org/2000/svg' width='28.247' height='35.035' viewBox='0 0 28.247 35.035'>
-                                <path d='M9,7.646V40.41a.844.844,0,0,0,1.263.778L36.235,24.805a.928.928,0,0,0,0-1.544L10.263,6.879A.836.836,0,0,0,9,7.646Z' transform='matrix(1, 0.017, -0.017, 1, -8.278, -6.907)' fill='#fff' />
-                            </svg>
-                        </div>
+            <div class="borderAbout">
+                <img class="imgAbout" src="<?= base_url(); ?>/Images/about.jpg" alt="">
+                <div class="textAbout">
+                    <div class="nameAbout">Johan Felix</div>
+                    <div class="descAbout">
+                        Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Beatae cumque explicabo repellat at reprehenderit incidunt aperiam! Incidunt reiciendis,
+                        fugit ipsum enim, praesentium expedita neque ratione dignissimos ullam similique deserunt assumenda.
+                        Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Beatae cumque explicabo repellat at reprehenderit incidunt aperiam! Incidunt reiciendis,
+                        fugit ipsum enim, praesentium expedita neque ratione dignissimos ullam similique deserunt assumenda.
+                        Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Beatae cumque explicabo repellat at reprehenderit incidunt aperiam! Incidunt reiciendis,
+                        fugit ipsum enim, praesentium expedita neque ratione dignissimos ullam similique deserunt assumenda.
                     </div>
-                <?php
-                    $ctr++;
-                endforeach; ?>
+                </div>
 
             </div>
+
+            <p class="pageIndicator">about me</p>
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.272" height="35.255" viewBox="0 0 75.272 75.255">
@@ -106,6 +98,8 @@
                     </svg>
                 </div>
             </div>
+
+
             <div id="backTop" title="Back to Top">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
                     <g id="Group_201" data-name="Group 201" transform="translate(1682 254)">
@@ -114,61 +108,25 @@
                     </g>
                 </svg>
             </div>
-            <div class="previewContainer">
-                <div class="previewArea" style="width:80%">
-                    <div class="headerPreview">
-                        <h3 class="previewTitle">Johan Felix</h3>
-                    </div>
-                    <div class="mainPreview">
-                        <div class="prevArea">
-                            <div class="arrowIcon" id="prev" style="margin-right: 0.5em">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
-                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M15.216,11.51a.919.919,0,0,1,.007,1.294l-4.268,4.282H27.218a.914.914,0,0,1,0,1.828H10.955L15.23,23.2a.925.925,0,0,1-.007,1.294.91.91,0,0,1-1.287-.007L8.142,18.647h0a1.026,1.026,0,0,1-.19-.288.872.872,0,0,1-.07-.352.916.916,0,0,1,.26-.64l5.794-5.836A.9.9,0,0,1,15.216,11.51Z" transform="translate(-7.882 -11.252)" />
-                                </svg>
-                            </div>
-                            <p class="prevText">prev</p>
-                        </div>
-                        <div class="previewImgContainer">
-                            <div class="iframeContainer">
-                                <iframe class="videoPreview" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <h2 id="titlePreview">Judul Video</h2>
-                        </div>
-                        <div class="nextArea">
-                            <p class="nextText">next</p>
-                            <div class="arrowIcon" id="next" style="margin-left: 0.5em">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15.243" height="8.501" viewBox="0 0 20.243 13.501">
-                                    <path id="Icon_ionic-ios-arrow-round-back" data-name="Icon ionic-ios-arrow-round-back" d="M20.792,11.51a.919.919,0,0,0-.007,1.294l4.268,4.282H8.789a.914.914,0,0,0,0,1.828H25.053L20.777,23.2a.925.925,0,0,0,.007,1.294.91.91,0,0,0,1.287-.007l5.794-5.836h0a1.027,1.027,0,0,0,.19-.288.872.872,0,0,0,.07-.352.916.916,0,0,0-.26-.64l-5.794-5.836A.9.9,0,0,0,20.792,11.51Z" transform="translate(-7.882 -11.252)" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footerPreview">
-                        <p class="footerPreviewText">video / engagement</p>
-                    </div>
-                </div>
-                <div class="closePreview">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13.426" height="13.422" viewBox="0 0 13.426 13.422">
-                        <path id="Icon_ionic-ios-close" data-name="Icon ionic-ios-close" d="M19.589,18l4.8-4.8A1.124,1.124,0,0,0,22.8,11.616l-4.8,4.8-4.8-4.8A1.124,1.124,0,1,0,11.616,13.2l4.8,4.8-4.8,4.8A1.124,1.124,0,0,0,13.2,24.384l4.8-4.8,4.8,4.8A1.124,1.124,0,1,0,24.384,22.8Z" transform="translate(-11.285 -11.289)" />
-                    </svg>
-                </div>
-            </div>
         </div>
     </section>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.11.0/rellax.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/colcade@0/colcade.js"></script>
     <script>
         var ada = false;
         var imgCtr = 1;
         $("body").css("overflow", "hidden");
         $(document).ready(function() {
-            $(".prevLoadingText").hide();
             $("body").css("animation-name", "fadeIn");
             $('#loading').hide();
-            $(".previewContainer").css("display", "none");
+            if ($(".listAchievement").offsetHeight < $(".listAchievement").scrollHeight ||
+                $(".listAchievement").offsetWidth < $(".listAchievement").scrollWidth) {
+                $(".listAchievement").css("justify-content", "center");
+            } else {
+                $(".listAchievement").css("justify-content", "flex-start");
+            }
         });
         /////////Munculin Box kanan bawah//////////////
         var scroll = setInterval(function() {
@@ -207,12 +165,6 @@
             var win = window.open(url, '_blank');
             win.focus();
         }
-        //////////////////////////////////////////////////
-        $("#backTop").click(function() {
-            $("#myWork").animate({
-                scrollTop: 0
-            }, 3000);
-        });
 
         //////////Dropdown Collapse//////////
         $(".photo").click(function() {
@@ -238,126 +190,6 @@
             }
         });
         /////////////////////////////////////
-        ///////////Masonry Layout////////////
-        var colc = new Colcade('.grid', {
-            columns: '.grid-col',
-            items: '.grid-item'
-        });
-        /////////////////////////////////////
-        ////////////Image Preview////////////
-        var preview = false;
-        $(".grid-item").click(function() {
-            if (!preview) {
-                $(".previewContainer").css("display", "block");
-                $(".previewContainer").addClass("fadeIn");
-                ctr = $(this).children(".video-item").attr("id").replace('gambar', '');
-                console.log(ctr);
-                imgCtr = parseInt(ctr);
-                var vidID = $("#gambar" + imgCtr).attr("src");
-                vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
-                console.log(vidID);
-                var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
-                console.log(src);
-                $(".videoPreview").attr("src", src);
-                var title = $(this).children(".video-title").children(".video-titleText").text();
-                console.log(title);
-                $("#titlePreview").text(title);
-                var fadePreview = setTimeout('$(".previewContainer").removeClass("fadeIn");', 1000);
-                preview = true;
-            }
-        });
-        $(".prevArea").click(function() {
-            previewImg("prev");
-        });
-
-        $(".nextArea").click(function() {
-            previewImg("next");
-        });
-
-        $(".closePreview").click(function() {
-            $(".previewContainer").addClass("fadeOut");
-            var fadePreview = setTimeout(function() {
-                $(".previewContainer").css("display", "none");
-                $(".previewContainer").removeClass("fadeOut");
-            }, 1000);
-            preview = false;
-        });
-
-        function previewImg(direction) {
-            $('.videoPreview').fadeOut(500);
-            var timeouts = setTimeout(loadIframe, 500);
-
-            function loadIframe(params) {
-                if (direction == "prev") {
-                    imgCtr--;
-                    if (imgCtr == 0) imgCtr = $('#displayArea .grid-item').length
-                } else {
-                    if (imgCtr == $('#displayArea .grid-item').length) imgCtr = 1;
-                    else imgCtr++;
-                }
-                var vidID = $("#gambar" + imgCtr).attr("src");
-                vidID = vidID.replace("http://i.ytimg.com/vi/", '').replace("/maxresdefault.jpg", '');
-                console.log(vidID);
-                var src = "https://www.youtube.com/embed/" + vidID + "?rel=0";
-                console.log(src);
-                var title = $("#title" + imgCtr).text();
-                $("#titlePreview").text(title);
-                $(".videoPreview").attr("src", src);
-            }
-
-        }
-        $(".videoPreview").on("load", function() {
-            $('.videoPreview').fadeIn(500);
-        });
-
-        // var prevLink;
-        // $("#item1").mouseenter(function() {
-        //     var link = $("#preview1").attr("src");
-        //     prevLink = link;
-        //     var newlink = link + "&amp;autoplay=1&amp;mute=1&amp;rel=0"
-        //     $("#preview1").attr("src", newlink);
-        //     $("#preview1").css("display", "block");
-        //     $("#preview1").css("z-index", 3);
-        //     $("#gambar1").css("z-index", 1);
-        //     $("#gambar1").css("display", "none");
-        // })
-        // $("#item1").mouseleave(function() {
-        //     $("#gambar1").addClass("fadeIn");
-        //     $("#gambar1").css("display", "block");
-        //     $("#gambar1").css("display", "block");
-        //     $("#gambar1").css("z-index", 3);
-        //     $("#preview1").css("z-index", 1);
-        //     var fadeout = setTimeout(() => {
-        //         $("#preview1").attr("src", prevLink);
-        //         $("#gambar1").removeClass("fadeIn");
-        //     }, 1000);
-        // }) 
-
-        $(".grid-item").mouseenter(function() {
-            $(this).children(".video-title").clearQueue();
-            $(this).children(".video-item").clearQueue();
-            $(this).children(".playIcon").clearQueue();
-            $(this).children(".video-title").animate({
-                left: "0"
-            }, 500);
-            $(this).children(".video-item").animate({
-                opacity: "0.5"
-            }, 500);
-            $(this).children(".playIcon").animate({
-                opacity: "1"
-            }, 500);
-        });
-        $(".grid-item").mouseleave(function() {
-            $(this).children(".video-title").animate({
-                left: "-100%"
-            }, 500);
-            $(this).children(".video-item").animate({
-                opacity: "1"
-            }, 500);
-            $(this).children(".playIcon").animate({
-                opacity: "0"
-            }, 500);
-        });
     </script>
 </body>
 
