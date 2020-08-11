@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 11 Agu 2020 pada 11.39
+-- Waktu pembuatan: 11 Agu 2020 pada 11.47
 -- Versi server: 10.4.11-MariaDB
 -- Versi PHP: 7.4.5
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_johan`
 --
+CREATE DATABASE IF NOT EXISTS `db_johan` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `db_johan`;
 
 -- --------------------------------------------------------
 
@@ -27,6 +29,7 @@ SET time_zone = "+00:00";
 -- Struktur dari tabel `achievement`
 --
 
+DROP TABLE IF EXISTS `achievement`;
 CREATE TABLE `achievement` (
   `id_achievement` varchar(8) NOT NULL,
   `nama_achievement` varchar(30) NOT NULL,
@@ -39,6 +42,7 @@ CREATE TABLE `achievement` (
 -- Struktur dari tabel `contact`
 --
 
+DROP TABLE IF EXISTS `contact`;
 CREATE TABLE `contact` (
   `id_contact` varchar(8) NOT NULL,
   `nama_contact` varchar(10) NOT NULL,
@@ -53,6 +57,7 @@ CREATE TABLE `contact` (
 -- Struktur dari tabel `gear`
 --
 
+DROP TABLE IF EXISTS `gear`;
 CREATE TABLE `gear` (
   `id_gear` varchar(8) NOT NULL,
   `nama_gear` varchar(10) NOT NULL,
@@ -66,6 +71,7 @@ CREATE TABLE `gear` (
 -- Struktur dari tabel `photo`
 --
 
+DROP TABLE IF EXISTS `photo`;
 CREATE TABLE `photo` (
   `id_photo` varchar(8) NOT NULL,
   `kategori_photo` varchar(10) NOT NULL,
@@ -90,6 +96,7 @@ INSERT INTO `photo` (`id_photo`, `kategori_photo`, `link_photo`) VALUES
 -- Struktur dari tabel `video`
 --
 
+DROP TABLE IF EXISTS `video`;
 CREATE TABLE `video` (
   `id_video` varchar(8) NOT NULL,
   `nama_video` varchar(70) NOT NULL,
