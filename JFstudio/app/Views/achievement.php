@@ -70,7 +70,7 @@
                         <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
                         <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
                         <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <!-- <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
                         <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
                         <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
                         <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
@@ -82,7 +82,7 @@
                         <p class="titleAchievement" id="achieve1" link="http://i.ytimg.com/vi/qnXcB5L97MI/maxresdefault.jpg" type="image">1st Discover Indonesia Photography Competition</p>
                         <p class="titleAchievement" id="achieve2" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/d8cd9399010117.5ee92b1b0f959.jpg" type="image">2nd Portrait Competition</p>
                         <p class="titleAchievement" id="achieve3" link="https://www.youtube.com/embed/kTWoeqPXpuo?rel=0" type="video">1st Travel Videography Competition</p>
-                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p>
+                        <p class="titleAchievement" id="achieve4" link="https://www.youtube.com/embed/qnqVKbiTJPo?rel=0" type="video">1st 2019 Sundae Short Movie Competition</p> -->
                     </div>
                 </div>
                 <div class="previewAchievement">

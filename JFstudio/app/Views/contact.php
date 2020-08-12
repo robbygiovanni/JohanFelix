@@ -61,28 +61,27 @@
                     <a class="nav-link cool-link" href="<?= base_url(); ?>/About">about me</a>
                 </li>
             </nav>
+            <h4 class="contactMe">Contact Me</h4>
             <div class="box2">
-                <h4 class="contactMe">Contact Me</h4>
-                <form method="post" action="">
-                    <div class="form-group">
-                        <label for="exampleInputName1">Name *</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email *</label>
-                        <input type="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputSubject1">Subject *</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Message *</label>
-                        <textarea class="form-control" rows="5"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <div class="form-group">
+                    <label for="exampleInputName1">Name *</label>
+                    <input id="iptName" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email *</label>
+                    <input id="iptEmail" type="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputSubject1">Subject *</label>
+                    <input id="iptSubject" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message *</label>
+                    <textarea id="iptMessage" class="form-control" rows="5"></textarea>
+                </div>
+                <button id="submit" type="button" class="btn btn-primary">Submit</button>
             </div>
+            <div class="success" style="display: none;"> Thank you for contact me! </div>
             <div id="footer-socialMedia">
                 <div id="insta" class="iconSosmed" title="https://instagram.com/johan.felix?igshid=foieomt0hd9h">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35.272" height="35.255" viewBox="0 0 75.272 75.255">
@@ -177,6 +176,29 @@
                     $(".photo").trigger("click");
                 }
             }
+        });
+
+        $("#submit").click(function() {
+            name = $("#iptName").val();
+            email = $("#iptEmail").val();
+            subject = $("#iptSubject").val();
+            message = $("#iptMessage").val();
+
+            alert(name);
+            $.ajax({
+                url: "<?= base_url(); ?>/Contact/submit",
+                type: post,
+                data: {
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                },
+                success: function(result) {
+                    $(".box2").css("display", "none");
+                    $(".success").css("display", "block");
+                }
+            });
         });
     </script>
 </body>
