@@ -25,11 +25,6 @@ class Contact extends BaseController
     public function submit()
     {
         $this->contactModel->insertMessage();
-        // $data = [
-        //     'photo' => $this->photoModel->getPhoto('portrait')
-        // ];
-
-        // return view('photo/portrait', $data);
     }
 
     //--------------------------------------------------------------------

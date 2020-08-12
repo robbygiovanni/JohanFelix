@@ -183,11 +183,11 @@
             email = $("#iptEmail").val();
             subject = $("#iptSubject").val();
             message = $("#iptMessage").val();
-
             alert(name);
+
             $.ajax({
                 url: "<?= base_url(); ?>/Contact/submit",
-                type: post,
+                method: "post",
                 data: {
                     name: name,
                     email: email,
