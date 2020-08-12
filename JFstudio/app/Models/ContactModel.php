@@ -21,7 +21,7 @@ class ContactModel extends Model
         $message = $_POST['message'];
 
         $data = [
-            'id_contact' => 'CO0001',
+            'id_contact' => 'CO0002',
             'nama_contact'  => $name,
             'email_contact'  => $email,
             'subject_contact' => $subject,

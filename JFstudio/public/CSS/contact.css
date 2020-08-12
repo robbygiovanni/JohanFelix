@@ -32,3 +32,9 @@
 label {
   font-family: "Roboto";
 }
+
+.success {
+  font-family: "Roboto";
+  font-size: 18px;
+  color: #868686;
+}
